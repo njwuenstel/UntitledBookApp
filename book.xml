@@ -1,0 +1,24 @@
+<work>
+    <id type="integer">11571577</id>
+    <books_count type="integer">1</books_count>
+    <ratings_count type="integer">1086</ratings_count>
+    <text_reviews_count type="integer">45</text_reviews_count>
+    <original_publication_year type="integer">2010</original_publication_year>
+    <original_publication_month type="integer">4</original_publication_month>
+    <original_publication_day type="integer">30</original_publication_day>
+    <average_rating>4.15</average_rating>
+    <best_book type="Book">
+        <id type="integer">8782597</id>
+        <title>Ender's Game</title>
+        <author>
+            <id type="integer">2940867</id>
+            <name>Frederic P. Miller</name>
+        </author>
+        <image_url>
+            https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+        </image_url>
+        <small_image_url>
+            https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png
+        </small_image_url>
+    </best_book>
+</work>

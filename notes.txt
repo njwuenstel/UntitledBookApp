@@ -1,0 +1,54 @@
+
+Book Covers
+https://openlibrary.org/dev/docs/api/covers
+
+
+examples:
+http://covers.openlibrary.org/b/id/240727-S.jpg
+http://covers.openlibrary.org/b/olid/OL7440033M-S.jpg
+http://covers.openlibrary.org/b/isbn/0385472579-S.jpg
+http://covers.openlibrary.org/b/isbn/9780385472579-S.jpg
+http://covers.openlibrary.org/b/lccn/93005405-S.jpg
+http://covers.openlibrary.org/b/oclc/28419896-S.jpg
+http://covers.openlibrary.org/b/goodreads/979250-S.jpg
+http://covers.openlibrary.org/b/librarything/192819-S.jpg
+
+
+Search:
+http://openlibrary.org/search?q=the+lord+of+the+rings
+http://openlibrary.org/search?title=the+lord+of+the+rings
+http://openlibrary.org/search.json?author=tolkien
+http://openlibrary.org/search?q=the+lord+of+the+rings&page=2
+
+
+
+
+2422333
+375802
+
+http://covers.openlibrary.org/b/isbn/0590353403-L.jpg
+http://covers.openlibrary.org/b/isbn/9780020868705-L.jpg
+http://covers.openlibrary.org/b/isbn/9780689840920-L.jpg
+
+
+
+###################################################################
+Goodreads API:
+
+0590353403 (isbn)
+https://www.goodreads.com/search/index.xml?key=BVYrzrOuMKyw4m5tGrOqQ&q=0590353403
+https://www.goodreads.com/search/index.xml?key=BVYrzrOuMKyw4m5tGrOqQ&q=9780020868705
+https://www.goodreads.com/search/index.xml?key=BVYrzrOuMKyw4m5tGrOqQ&q=9780689840920
+
+
+9780689840920
+
+
+This will return stuff from the goodreads ID (including isbn)
+https://www.goodreads.com/book/show/{ID HERE}?format=xml&key=BVYrzrOuMKyw4m5tGrOqQ
+https://www.goodreads.com/book/show/50?format=xml&key=BVYrzrOuMKyw4m5tGrOqQ
+
+
+
+
+
