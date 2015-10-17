@@ -1,0 +1,47 @@
+<GoodreadsResponse>
+    <Request>
+        <authentication>true</authentication>
+        <key>
+            <![CDATA[ BVYrzrOuMKyw4m5tGrOqQ ]]>
+        </key>
+        <method>
+            <![CDATA[ search_index ]]>
+        </method>
+    </Request>
+    <search>
+        <query>
+            <![CDATA[ 9780689840920 ]]>
+        </query>
+        <results-start>1</results-start>
+        <results-end>1</results-end>
+        <total-results>1</total-results>
+        <source>Goodreads</source>
+        <query-time-seconds>0.01</query-time-seconds>
+        <results>
+            <work>
+                <id type="integer">1158125</id>
+                <books_count type="integer">77</books_count>
+                <ratings_count type="integer">185350</ratings_count>
+                <text_reviews_count type="integer">8043</text_reviews_count>
+                <original_publication_year type="integer">1986</original_publication_year>
+                <original_publication_month type="integer">11</original_publication_month>
+                <original_publication_day type="integer">1</original_publication_day>
+                <average_rating>3.65</average_rating>
+                <best_book type="Book">
+                    <id type="integer">50</id>
+                    <title>Hatchet (Brian's Saga, #1)</title>
+                    <author>
+                        <id type="integer">18</id>
+                        <name>Gary Paulsen</name>
+                    </author>
+                    <image_url>
+                        https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+                    </image_url>
+                    <small_image_url>
+                        https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png
+                    </small_image_url>
+                </best_book>
+            </work>
+        </results>
+    </search>
+</GoodreadsResponse>

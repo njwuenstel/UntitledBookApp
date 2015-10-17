@@ -1,5 +1,3 @@
-package src;
-
 import java.io.*;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -30,18 +28,19 @@ public class JAXBExample {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-         try {
 
-             File file = new File("output.xml");
-             JAXBContext jaxbContext = JAXBContext.newInstance(Customer.class);
 
-             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-             customer = (Customer) jaxbUnmarshaller.unmarshal(file);
-             System.out.println(customer);
+        try {
 
-         } catch (JAXBException e) {
-             e.printStackTrace();
-         }
+            File file = new File("output.xml");
+            JAXBContext jaxbContext = JAXBContext.newInstance(Customer.class);
 
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            customer = (Customer) jaxbUnmarshaller.unmarshal(file);
+            System.out.println(customer);
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
     }
 }
