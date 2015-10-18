@@ -50,5 +50,4 @@ https://www.goodreads.com/book/show/50?format=xml&key=BVYrzrOuMKyw4m5tGrOqQ
 
 
 
-
-
+https://www.goodreads.com/search/index.xml?key=BVYrzrOuMKyw4m5tGrOqQ&q=hobbit
