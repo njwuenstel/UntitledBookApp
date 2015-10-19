@@ -15,6 +15,7 @@ public class BookshelfBean {
 
     @XmlElement(name = "book")
     public void setBookshelf(ArrayList<BookBean> bookshelf) {
+
         this.bookshelf = bookshelf;
     }
 

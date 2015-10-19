@@ -93,28 +93,32 @@ public class JaxbThree {
     }
 
     public static Document bbbb() throws ParserConfigurationException, SAXException, IOException {
+
         File documentFile = new File("problem.xml");
-        System.out.println("zzzz" + documentFile);
+        System.out.println("File Name: " + documentFile);
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
-
         Document document = db.parse(documentFile);
         document.getDocumentElement().normalize();
-        NodeList parentList = (NodeList)document.getElementsByTagName("parent");
+
+        // start doing stuff
+        NodeList parentList = document.getElementsByTagName("parent");
 
         for (int i = 0; i < parentList.getLength(); ++i) {
+
             Element node = (Element) parentList.item(i);
-            String name = node.getElementsByTagName("name").item(0).getFirstChild().getNodeValue();
+
+            String name = parseNodeValue(node, "name");
 
             NodeList childList = node.getElementsByTagName("child");
             for (int j = 0; j < childList.getLength(); ++j) {
                 Element value = (Element) childList.item(j);
 
 
-                NodeList grandchildOneList = value.getElementsByTagName("grandchild");
-                for (int k = 0; k < grandchildOneList.getLength(); ++k) {
-                    Element grandchild = (Element) grandchildOneList.item(k);
+                NodeList grandchildList = value.getElementsByTagName("grandchild");
+                for (int k = 0; k < grandchildList.getLength(); ++k) {
+                    Element grandchild = (Element) grandchildList.item(k);
                     String grandchildText = grandchild.getFirstChild().getNodeValue();
                     System.out.println("Name: " + name);
                     System.out.println("Grandchild: " + grandchildText);
@@ -132,6 +136,11 @@ public class JaxbThree {
             return cd.getData();
         }
         return "?";
+    }
+
+    public static String parseNodeValue(Element node, String tagName) {
+
+        return node.getElementsByTagName(tagName).item(0).getFirstChild().getNodeValue();
     }
 
 

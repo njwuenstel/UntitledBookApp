@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root_element>
     <parent>
-        <name>bla</name>
+        <name>parent bla</name>
         <child>
-            <grandchild>i am grandchild one of child one</grandchild>
-            <grandchild>i am grandchild two of child one</grandchild>
-            <grandchild>i am grandchild three of child one</grandchild>
+            <name>child one</name>
+            <grandchild>i am grandchild one of child one of bla</grandchild>
+            <grandchild>i am grandchild two of child one of bla</grandchild>
+            <grandchild>i am grandchild three of child one of bla</grandchild>
         </child>
         <child>
-            <grandchild>i am grandchild one of child two</grandchild>
-            <grandchild>i am grandchild two of child two</grandchild>
-            <grandchild>i am grandchild three of child two</grandchild>
+            <name>child two</name>
+            <grandchild>i am grandchild one of child two of bla</grandchild>
+            <grandchild>i am grandchild two of child two of bla</grandchild>
+            <grandchild>i am grandchild three of child two of bla</grandchild>
         </child>
         <child>
-            <grandchild>i am grandchild one of child three</grandchild>
-            <grandchild>i am grandchild two of child three</grandchild>
-            <grandchild>i am grandchild three of child three</grandchild>
+            <name>child three</name>
+            <grandchild>i am grandchild one of child three of bla</grandchild>
+            <grandchild>i am grandchild two of child three of bla</grandchild>
+            <grandchild>i am grandchild three of child three of bla</grandchild>
         </child>
     </parent>
     <parent>
         <name>whoop</name>
         <child>
-            <grandchild>i am grandchild one of child of whoop</grandchild>
+            <name>child one</name>
+            <grandchild>i am grandchild one of child one of whoop</grandchild>
             <grandchild>i am grandchild two of child one of whoop</grandchild>
             <grandchild>i am grandchild three of child one of whoop</grandchild>
         </child>
         <child>
+            <name>child two</name>
             <grandchild>i am grandchild one of child two of whoop</grandchild>
             <grandchild>i am grandchild two of child two of whoop</grandchild>
             <grandchild>i am grandchild three of child two of whoop</grandchild>
         </child>
         <child>
+            <name>child three</name>
             <grandchild>i am grandchild one of child three of whoop</grandchild>
             <grandchild>i am grandchild two of child three of whoop</grandchild>
             <grandchild>i am grandchild three of child three of whoop</grandchild>

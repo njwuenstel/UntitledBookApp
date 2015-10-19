@@ -1,3 +1,4 @@
+import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -14,6 +15,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 public class JaxbBook {
+
+    static Logger log = BookieLogger.xml;
 
     public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 
@@ -51,21 +54,20 @@ public class JaxbBook {
 //        }
 
         // Unmarshalling Example
-//        try {
-//
-//            File file = new File("booksout.xml");
-//            JAXBContext jaxbContext = JAXBContext.newInstance(BookshelfBean.class);
-//            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-//
-//            // weird syntax
-//            BookshelfBean bookshelf = (BookshelfBean) jaxbUnmarshaller.unmarshal(file);
-//            System.out.println(bookshelf);
-//
-//        } catch (JAXBException e) {
-//            e.printStackTrace();
-//        }
+        try {
 
-        Document doc = bbbb();
+            File file = new File("booksout.xml");
+            JAXBContext jaxbContext = JAXBContext.newInstance(BookshelfBean.class);
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+
+            BookshelfBean bookshelf = (BookshelfBean) jaxbUnmarshaller.unmarshal(file);
+            System.out.println(bookshelf);
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+
+        //Document doc = bbbb();
 
     }
 
@@ -79,42 +81,50 @@ public class JaxbBook {
     }
 
     public static Document bbbb() throws ParserConfigurationException, SAXException, IOException {
-        File documentFile = new File("book2.xml");
-        System.out.println("zzzz" + documentFile);
 
+        // pass filename in as argument
+        File documentFile = new File("hobbitSearchResult.xml");
+        System.out.println("File name: " + documentFile);
+
+        // Document builder setup
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
-
         Document document = db.parse(documentFile);
         document.getDocumentElement().normalize();
-        NodeList workList = document.getElementsByTagName("work");
 
+
+        // get root node list
+        NodeList workList = document.getElementsByTagName("work");
+        System.out.println("Work Count: " + workList.getLength());
+
+        // split this out to pass a list and return a node
         for (int i = 0; i < workList.getLength(); ++i) {
             Element workNode = (Element) workList.item(i);
+
+            // call method to get value
             String isbn = parseNodeValue(workNode, "id");
 
-            NodeList bestBookList = workNode.getElementsByTagName("best_book");
-            for (int j = 0; j < bestBookList.getLength(); ++j) {
-                Element beatBookNode = (Element) bestBookList.item(i);
+            // get best book node
+            Element bestBookNode = (Element) workNode.getElementsByTagName("best_book").item(0);
 
-                Element value = (Element) bestBookList.item(j);
-                String title = parseNodeValue(beatBookNode, "title");
-                String author = parseNodeValue(beatBookNode, "name");
-                String goodreadsId = parseNodeValue(beatBookNode, "id");
+            String title = parseNodeValue(bestBookNode, "title");
+            String author = parseNodeValue(bestBookNode, "name");
+            String goodreadsId = parseNodeValue(bestBookNode, "id");
 
-
-                System.out.println("title: " + title);
-                System.out.println("author: " + author);
-                System.out.println("ISBN: " + isbn);
-                System.out.println("goodreadsId: " + goodreadsId);
-            }
+            System.out.println("");
+            System.out.println("******************************");
+            System.out.println("title: " + title);
+            System.out.println("author: " + author);
+            System.out.println("ISBN: " + isbn);
+            System.out.println("goodreadsId: " + goodreadsId);
         }
 
         return document;
     }
 
-    public static String parseNodeValue(Element node, String tagName) throws ParserConfigurationException, SAXException, IOException {
 
+
+    public static String parseNodeValue(Element node, String tagName) {
 
         return node.getElementsByTagName(tagName).item(0).getFirstChild().getNodeValue();
     }

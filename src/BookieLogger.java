@@ -6,8 +6,9 @@ import org.apache.log4j.Logger;
 public class BookieLogger {
 
     // not totally sure how to do this yet but would to return loggers by input string.
-    Logger services = Logger.getLogger("bookie.services");
-    Logger web = Logger.getLogger("bookie.web");
-    Logger database = Logger.getLogger("bookie.database");
+    protected final static Logger services = Logger.getLogger("bookie.services");
+    protected final static Logger web = Logger.getLogger("bookie.web");
+    protected final static Logger database = Logger.getLogger("bookie.database");
+    protected final static Logger xml = Logger.getLogger("bookie.xml");
 
 }
