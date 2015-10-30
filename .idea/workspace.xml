@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea8289b9-50cb-40b0-9b1f-c59ebce70fa5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BookSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xml/isbnResponse.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UntitledBookApp.iml" afterPath="$PROJECT_DIR$/UntitledBookApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/UntitledBookApp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/UntitledBookApp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UntitledBookApp.iws" />
@@ -702,7 +697,7 @@
       <workItem from="1445568912694" duration="3617000" />
       <workItem from="1445572646633" duration="2176000" />
       <workItem from="1445826681601" duration="2887000" />
-      <workItem from="1445835729925" duration="13647000" />
+      <workItem from="1445835729925" duration="13708000" />
     </task>
     <task id="LOCAL-00001" summary="some stuff taking shape">
       <created>1444631043592</created>
@@ -728,11 +723,17 @@
       <option name="project" value="LOCAL" />
       <updated>1445257917381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="urls for searches">
+      <created>1446188790454</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1446188790454</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62333000" />
+    <option name="totallyTimeSpent" value="62394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -783,7 +784,8 @@
     <MESSAGE value="jaxb continued" />
     <MESSAGE value="xml parsing finally making some sense" />
     <MESSAGE value="xml demo rough files" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml demo rough files" />
+    <MESSAGE value="urls for searches" />
+    <option name="LAST_COMMIT_MESSAGE" value="urls for searches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
