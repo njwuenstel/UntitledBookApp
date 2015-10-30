@@ -28,5 +28,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="org.glassfish.jersey:jax-rs-ri:2.0-rc1" level="project" />
   </component>
 </module>

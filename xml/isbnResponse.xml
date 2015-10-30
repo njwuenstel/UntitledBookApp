@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+    <Request>
+        <authentication>true</authentication>
+        <key><![CDATA[BVYrzrOuMKyw4m5tGrOqQ]]></key>
+        <method><![CDATA[search_index]]></method>
+    </Request>
+    <search>
+        <query><![CDATA[9780020868705]]></query>
+        <results-start>1</results-start>
+        <results-end>1</results-end>
+        <total-results>1</total-results>
+        <source>Goodreads</source>
+        <query-time-seconds>0.01</query-time-seconds>
+        <results>
+            <work>
+                <id type="integer">2920952</id>
+                <books_count type="integer">205</books_count>
+                <ratings_count type="integer">188034</ratings_count>
+                <text_reviews_count type="integer">7104</text_reviews_count>
+                <original_publication_year type="integer">1942</original_publication_year>
+                <original_publication_month type="integer" nil="true"/>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>4.19</average_rating>
+                <best_book type="Book">
+                    <id type="integer">11152</id>
+                    <title>The Screwtape Letters</title>
+                    <author>
+                        <id type="integer">1069006</id>
+                        <name>C.S. Lewis</name>
+                    </author>
+                    <image_url>https://d.gr-assets.com/books/1328208242m/11152.jpg</image_url>
+                    <small_image_url>https://d.gr-assets.com/books/1328208242s/11152.jpg</small_image_url>
+                </best_book>
+            </work>
+
+        </results>
+    </search>
+
+</GoodreadsResponse>
