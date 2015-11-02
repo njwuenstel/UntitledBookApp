@@ -40,7 +40,7 @@ Week 6
 
 Week 7
 
-    Plan out architetecture for future code, adopting code quality principles.
+    Plan out architecture for future code, adopting code quality principles.
     Determine if there is an appropriate use for custom tags
     Begin database design
     Update status
