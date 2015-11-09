@@ -22,3 +22,9 @@ Goals for next week:
 2. If xmls come back dirty figure out a way to clean them up.
 3. Attempt to format and pass objects to the database using JDBC.
   -create a table for book, add a few fields, write records from the search.
+
+
+This This week:
+1. Repackaged service classes. Added utilities for search and unmarshall
+2. created xjc for BookSearch
+3. some error handling.
