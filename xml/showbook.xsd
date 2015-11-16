@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GoodreadsResponse" type="GoodreadsResponseType"/>
+  <xs:complexType name="small_image_urlType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="nophoto"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="similar_booksType">
+    <xs:sequence>
+      <xs:element type="bookType" name="book" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ratings_countType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="default_description_language_codeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="nil"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ShowBookResponseType">
+    <xs:sequence>
+      <xs:element type="RequestType" name="Request"/>
+      <xs:element type="bookType" name="book"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ratings_sumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="default_chaptering_book_idType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+        <xs:attribute type="xs:string" name="nil"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="series_workType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="user_position"/>
+      <xs:element type="seriesType" name="series"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="seriesType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="xs:string" name="note"/>
+      <xs:element type="xs:string" name="series_works_count"/>
+      <xs:element type="xs:string" name="primary_work_count"/>
+      <xs:element type="xs:string" name="numbered"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="original_publication_monthType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="shelfType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+        <xs:attribute type="xs:string" name="count" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="books_countType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="original_publication_dayType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="original_language_idType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+        <xs:attribute type="xs:string" name="nil"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="idType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="reviews_countType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="image_urlType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="nophoto"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="authorType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="role" minOccurs="0"/>
+      <xs:element type="image_urlType" name="image_url" minOccurs="0"/>
+      <xs:element type="small_image_urlType" name="small_image_url" minOccurs="0"/>
+      <xs:element type="xs:string" name="link"/>
+      <xs:element type="xs:string" name="average_rating" minOccurs="0"/>
+      <xs:element type="xs:string" name="ratings_count" minOccurs="0"/>
+      <xs:element type="xs:string" name="text_reviews_count" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="original_publication_yearType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="series_worksType">
+    <xs:sequence>
+      <xs:element type="series_workType" name="series_work"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="book_linksType">
+    <xs:sequence>
+      <xs:element type="book_linkType" name="book_link"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="desc_user_idType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="authorsType">
+    <xs:sequence>
+      <xs:element type="authorType" name="author"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="popular_shelvesType">
+    <xs:sequence>
+      <xs:element type="shelfType" name="shelf" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="book_linkType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="link"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="text_reviews_countType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="workType">
+    <xs:sequence>
+      <xs:element type="idType" name="id"/>
+      <xs:element type="books_countType" name="books_count" minOccurs="0"/>
+      <xs:element type="best_book_idType" name="best_book_id" minOccurs="0"/>
+      <xs:element type="reviews_countType" name="reviews_count" minOccurs="0"/>
+      <xs:element type="ratings_sumType" name="ratings_sum" minOccurs="0"/>
+      <xs:element type="ratings_countType" name="ratings_count" minOccurs="0"/>
+      <xs:element type="text_reviews_countType" name="text_reviews_count" minOccurs="0"/>
+      <xs:element type="original_publication_yearType" name="original_publication_year" minOccurs="0"/>
+      <xs:element type="original_publication_monthType" name="original_publication_month" minOccurs="0"/>
+      <xs:element type="original_publication_dayType" name="original_publication_day" minOccurs="0"/>
+      <xs:element type="xs:string" name="original_title" minOccurs="0"/>
+      <xs:element type="original_language_idType" name="original_language_id" minOccurs="0"/>
+      <xs:element type="xs:string" name="media_type" minOccurs="0"/>
+      <xs:element type="xs:string" name="rating_dist" minOccurs="0"/>
+      <xs:element type="desc_user_idType" name="desc_user_id" minOccurs="0"/>
+      <xs:element type="default_chaptering_book_idType" name="default_chaptering_book_id" minOccurs="0"/>
+      <xs:element type="default_description_language_codeType" name="default_description_language_code" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="best_book_idType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RequestType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="authentication"/>
+      <xs:element type="xs:string" name="key"/>
+      <xs:element type="xs:string" name="method"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bookType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="title_without_series"/>
+      <xs:element type="xs:string" name="link"/>
+      <xs:element type="xs:string" name="small_image_url"/>
+      <xs:element type="xs:string" name="image_url"/>
+      <xs:element type="workType" name="work"/>
+      <xs:element type="xs:string" name="isbn"/>
+      <xs:element type="xs:string" name="isbn13"/>
+      <xs:element type="xs:string" name="average_rating"/>
+      <xs:element type="xs:string" name="ratings_count"/>
+      <xs:element type="authorsType" name="authors"/>
+      <xs:element type="xs:string" name="asin"/>
+      <xs:element type="xs:string" name="kindle_asin"/>
+      <xs:element type="xs:string" name="publication_year"/>
+      <xs:element type="xs:string" name="publication_month"/>
+      <xs:element type="xs:string" name="publication_day"/>
+      <xs:element type="xs:string" name="publisher"/>
+      <xs:element type="xs:string" name="language_code"/>
+      <xs:element type="xs:string" name="is_ebook"/>
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="xs:string" name="num_pages"/>
+      <xs:element type="xs:string" name="format"/>
+      <xs:element type="xs:string" name="edition_information"/>
+      <xs:element type="xs:string" name="text_reviews_count"/>
+      <xs:element type="xs:string" name="url"/>
+      <xs:element type="xs:string" name="reviews_widget"/>
+      <xs:element type="popular_shelvesType" name="popular_shelves"/>
+      <xs:element type="book_linksType" name="book_links"/>
+      <xs:element type="series_worksType" name="series_works"/>
+      <xs:element type="similar_booksType" name="similar_books"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:schema>
