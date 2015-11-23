@@ -1,15 +1,13 @@
 package goodreads.service;
 
-import goodreads.service.pojo.WorkBean;
+import entity.WorkBean;
 
 import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
-import java.util.ArrayList;
 
 /**
  * Created by Sun Prairie PC on 11/7/2015.
@@ -88,13 +86,13 @@ public class GoodreadsSearchUtil {
      * @return an InputStream of the goodreads api response
      * @throws IOException
      */
-    protected InputStream goodreadsGet(URL url) throws IOException {
+    protected HttpURLConnection goodreadsGetConnection(URL url) throws IOException {
 
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setRequestProperty("Accept", "application/xml");
 
-        InputStream inputStream = connection.getInputStream();
+        //InputStream inputStream = connection.getInputStream();
 
         //TODO
         // if(debug) {
@@ -102,9 +100,12 @@ public class GoodreadsSearchUtil {
         //     System.out.println(inputStreamString);
         // }
 
-        connection.disconnect();
+        return connection;
+    }
 
-        return inputStream;
+    protected void closeConnection(HttpURLConnection connection) {
+
+        connection.disconnect();
     }
 
 }

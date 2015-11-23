@@ -1,13 +1,13 @@
 package goodreads.service;
 
-import goodreads.service.pojo.WorkBean;
+import entity.WorkBean;
 import goodreads.service.xjc.booksearch.BookSearchResponseType;
 import goodreads.service.xjc.showbook.ShowBookResponseType;
 
 import goodreads.service.xjc.booksearch.WorkType;
 
 import java.io.IOException;
-import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -66,9 +66,11 @@ public class GoodreadsServiceMapper {
         try {
             URL url = searchUtil.getShowBookUrl(workId);
             /* Call the service */
-            InputStream responseStream = searchUtil.goodreadsGet(url);
+            HttpURLConnection connection = searchUtil.goodreadsGetConnection(url);
             /* Unmarshall the response */
-            unmarshalledResponse = unmarshaller.unmarshalShowBook(responseStream);
+            unmarshalledResponse = unmarshaller.unmarshalShowBook(connection.getInputStream());
+            /* Close the connection */
+            searchUtil.closeConnection(connection);
 
         } catch (MalformedURLException e) {
             //TODO log

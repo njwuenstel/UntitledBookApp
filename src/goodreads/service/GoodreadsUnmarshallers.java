@@ -50,7 +50,6 @@ public class GoodreadsUnmarshallers {
 //            e.printStackTrace();
 //        }
 
-        System.out.println("ssssss");
         System.out.println(unmarshalledBookSearch.getSearch().getResults().getWork().get(0).getBestBook().getTitle());
 
         return unmarshalledBookSearch;

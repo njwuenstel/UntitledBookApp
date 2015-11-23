@@ -1,4 +1,4 @@
-package goodreads.service.pojo;
+package entity;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -8,6 +8,7 @@ import java.io.StringWriter;
  */
 public class WorkBean {
 
+    private int publicId;
     private String title;
     private String author;
     private String goodreadsId;
@@ -21,7 +22,21 @@ public class WorkBean {
     /* no argument constructor */
     public WorkBean() {}
 
+    public WorkBean(String title, String author, String goodreadsId) {
+        this.title = title;
+        this.author = author;
+        this.goodreadsId = goodreadsId;
+    }
+
     /* getters and setters */
+    public int getPublicId() {
+        return publicId;
+    }
+
+    public void setPublicId(int publicId) {
+        this.publicId = publicId;
+
+    }
     public String getTitle() {
         return title;
     }
@@ -92,6 +107,7 @@ public class WorkBean {
         StringWriter stringWriter = new StringWriter();
         PrintWriter writer = new PrintWriter(stringWriter, true);
 
+        writer.println("Work ID: " + getPublicId());
         writer.println("Title: " + getTitle());
         writer.println("Author: " + getAuthor());
         writer.println("ISBN: " + getIsbn());

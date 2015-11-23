@@ -29,5 +29,15 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="org.glassfish.jersey:jax-rs-ri:2.0-rc1" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.37-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="org.hibernate:hibernate-core:4.2.0.Final" level="project" />
   </component>
 </module>

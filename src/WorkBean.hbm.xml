@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="entity.WorkBean" table="work">
+        <meta attribute="class-description">
+            This class contains the work detail.
+        </meta>
+        <id name="publicId" type="int" column="work_id">
+            <generator class="native"/>
+        </id>
+        <property name="goodreadsId" column="goodreads_id" type="string"/>
+        <property name="title" column="title" type="string"/>
+        <property name="author" column="author" type="string"/>
+    </class>
+</hibernate-mapping>
