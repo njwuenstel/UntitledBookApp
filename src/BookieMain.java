@@ -1,4 +1,5 @@
 import org.apache.log4j.Logger;
+import util.BookieLogger;
 
 /**
  * Created by Sun Prairie PC on 10/5/2015.
@@ -6,10 +7,6 @@ import org.apache.log4j.Logger;
 public class BookieMain {
 
     public static void main(String[] args) {
-
-        BookieLogger bl = new BookieLogger();
-        Logger webLog = bl.web;
-        Logger servicesLog = bl.services;
 
     }
 }

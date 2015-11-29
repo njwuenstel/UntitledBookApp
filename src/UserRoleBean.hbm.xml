@@ -4,16 +4,14 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="entity.UserBean" table="user">
+    <class name="entity.UserRoleBean" table="user_roles">
         <meta attribute="class-description">
             This class contains the work detail.
         </meta>
         <id name="userId" type="int" column="user_id">
             <generator class="native"/>
         </id>
-        <property name="firstName" column="first_name" type="string"/>
-        <property name="lastName" column="last_name" type="string"/>
         <property name="userAlias" column="user_alias" type="string"/>
-        <property name="userPassword" column="user_pass" type="string"/>
+        <property name="roleName" column="role_name" type="string"/>
     </class>
 </hibernate-mapping>

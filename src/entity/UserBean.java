@@ -11,13 +11,18 @@ public class UserBean {
     private int userId;
     private String firstName;
     private String lastName;
+    private String userAlias;
+    private String userPassword;
 
     /* no argument constructor */
     public UserBean() {}
 
-    public UserBean(String firstName, String lastName) {
+    public UserBean(String firstName, String lastName,
+                          String userAlias, String userPassword) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.userAlias = userAlias;
+        this.userPassword = userPassword;
     }
 
     public int getUserId() {
@@ -44,6 +49,22 @@ public class UserBean {
         this.lastName = lastName;
     }
 
+    public String getUserAlias() {
+        return userAlias;
+    }
+
+    public void setUserAlias(String userAlias) {
+        this.userAlias = userAlias;
+    }
+
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
+
     @Override
     public String toString() {
 
@@ -54,6 +75,8 @@ public class UserBean {
         writer.println("First Name: " + getFirstName());
         writer.println("Last Name: " + getLastName());
         writer.println("Full Name: " + getFirstName() + " " + getLastName());
+        writer.println("User Alias: " + getUserAlias());
+        writer.println("User Password: not telling");
 
         return stringWriter.toString();
     }

@@ -23,7 +23,7 @@
         </web-resource-collection>
         <auth-constraint>
             <role-name>admin</role-name>
-            <role-name>bookie</role-name>
+            <role-name>appuser</role-name>
         </auth-constraint>
     </security-constraint>
 
