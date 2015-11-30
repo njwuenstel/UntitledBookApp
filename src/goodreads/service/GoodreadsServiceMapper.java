@@ -5,6 +5,8 @@ import goodreads.service.xjc.booksearch.BookSearchResponseType;
 import goodreads.service.xjc.showbook.ShowBookResponseType;
 
 import goodreads.service.xjc.booksearch.WorkType;
+import org.apache.log4j.Logger;
+import util.BookieLogger;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -17,6 +19,8 @@ import java.util.List;
  * Created by Sun Prairie PC on 11/7/2015.
  */
 public class GoodreadsServiceMapper {
+
+    Logger log = BookieLogger.getServiceLog();
 
     GoodreadsSearchUtil searchUtil = new GoodreadsSearchUtil();
     GoodreadsUnmarshallers unmarshaller = new GoodreadsUnmarshallers();
@@ -73,13 +77,16 @@ public class GoodreadsServiceMapper {
             searchUtil.closeConnection(connection);
 
         } catch (MalformedURLException e) {
-            //TODO log
+
+            log.error("MalformedURLException occurred mapping - " + workId + ":/n" + e);
 
         } catch (IOException e) {
-            //TODO log io exception
+
+            log.error("IOException occurred mapping - " + workId + ":/n" + e);
 
         } catch (Exception e) {
-            //TODO log
+
+            log.error("Exception occurred mapping - " + workId + ":/n" + e);
         }
         /* return the unmarshalled response */
         return unmarshalledResponse;

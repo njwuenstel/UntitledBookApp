@@ -1,30 +1,35 @@
 package goodreads.service;
 
 import entity.WorkBean;
+import org.apache.log4j.Logger;
+import util.BookieLogger;
 
 import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
+import java.util.Scanner;
 
 /**
  * Created by Sun Prairie PC on 11/7/2015.
  */
 public class GoodreadsSearchUtil {
 
+    Logger log = BookieLogger.getServiceLog();
 
-    private static String GOODREADS_PATH = "https://www.goodreads.com";
-    private static String GOODREADS_KEY = "BVYrzrOuMKyw4m5tGrOqQ&q";
+    protected static String GOODREADS_PATH = "https://www.goodreads.com";
+    protected static String GOODREADS_KEY = "BVYrzrOuMKyw4m5tGrOqQ&q";
 
-    private static String SEARCH_BOOK_URL = "https://www.goodreads.com/search/index.xml?key=" + GOODREADS_KEY + "=";
+    protected static String SEARCH_BOOK_URL = "https://www.goodreads.com/search/index.xml?key=" + GOODREADS_KEY + "=";
 
-    private static String SHOW_BOOK_URL_FRONT = "https://www.goodreads.com/book/show/";
-    private static String SHOW_BOOK_URL_BACK = "?format=xml&key=" + GOODREADS_KEY;
+    protected static String SHOW_BOOK_URL_FRONT = "https://www.goodreads.com/book/show/";
+    protected static String SHOW_BOOK_URL_BACK = "?format=xml&key=" + GOODREADS_KEY;
 
-    private static String SEARCH_AUTHOR_URL_FRONT = "https://www.goodreads.com/api/author_url/";
-    private static String SEARCH_AUTHOR_URL_BACK = "?key=" + GOODREADS_KEY;
+    protected static String SEARCH_AUTHOR_URL_FRONT = "https://www.goodreads.com/api/author_url/";
+    protected static String SEARCH_AUTHOR_URL_BACK = "?key=" + GOODREADS_KEY;
 
 
     /**
@@ -34,7 +39,8 @@ public class GoodreadsSearchUtil {
 
         String encodedString = encodeString(search);
         String uri = SEARCH_BOOK_URL + encodedString;
-        //TODO log url    System.out.println(url);
+
+        log.info("SearchBook url: " + uri);
 
         return new URL(uri);
     }
@@ -45,7 +51,8 @@ public class GoodreadsSearchUtil {
     public URL getShowBookUrl(String workId) throws MalformedURLException {
 
         String uri = SHOW_BOOK_URL_FRONT + workId + SHOW_BOOK_URL_BACK;
-        //TODO log url    System.out.println(url);
+
+        log.info("ShowBook url: " + uri);
 
         return new URL(uri);
     }
@@ -57,7 +64,8 @@ public class GoodreadsSearchUtil {
 
         String encodedString = encodeString(search);
         String uri = SEARCH_AUTHOR_URL_FRONT + encodedString + SEARCH_AUTHOR_URL_BACK;
-        URL url = new URL(uri);
+
+        log.info("SearchAuthor url: " + uri);
 
         return new URL(uri);
     }
@@ -88,17 +96,17 @@ public class GoodreadsSearchUtil {
      */
     protected HttpURLConnection goodreadsGetConnection(URL url) throws IOException {
 
+        log.info("Opening connection - " + url);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setRequestProperty("Accept", "application/xml");
 
-        //InputStream inputStream = connection.getInputStream();
-
-        //TODO
-        // if(debug) {
-        //     String inputStreamString = new Scanner(inputStream,"UTF-8").useDelimiter("\\A").next();
-        //     System.out.println(inputStreamString);
-        // }
+        /* log response if at debug level */
+        if(log.isDebugEnabled()) {
+            InputStream inputStream = connection.getInputStream();
+            String inputStreamString = new Scanner(inputStream,"UTF-8").useDelimiter("\\A").next();
+            log.debug(inputStreamString);
+        }
 
         return connection;
     }
@@ -106,6 +114,8 @@ public class GoodreadsSearchUtil {
     protected void closeConnection(HttpURLConnection connection) {
 
         connection.disconnect();
+
+        log.info("Connection - " + connection.getURL() + "has been disconnected.");
     }
 
 }

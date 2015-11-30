@@ -2,6 +2,8 @@ package goodreads.service;
 
 import entity.WorkBean;
 import goodreads.service.xjc.booksearch.BookSearchResponseType;
+import org.apache.log4j.Logger;
+import util.BookieLogger;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
  * Created by Sun Prairie PC on 11/7/2015.
  */
 public class GoodreadsServiceGateway {
+
+    Logger log = BookieLogger.getServiceLog();
 
     GoodreadsSearchUtil searchUtil = new GoodreadsSearchUtil();
     GoodreadsServiceMapper mapper = new GoodreadsServiceMapper();
@@ -39,15 +43,16 @@ public class GoodreadsServiceGateway {
 
 
         } catch (MalformedURLException e) {
-            //TODO log
+
+            log.error("MalformedURLException occurred searching - " + search + ":/n" + e);
 
         } catch (IOException e) {
-            //TODO log io exception
+
+            log.error("IOException occurred searching - " + search + ":/n" + e);
 
         } catch (Exception e) {
-            //TODO log
-            System.out.println(e);
 
+            log.error("Exception occurred searching - " + search + ":/n" + e);
         }
     }
 }
