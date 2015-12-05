@@ -15,7 +15,7 @@ public class WorkBeanDriver {
         UserRoleBeanDao userRoleDao = new UserRoleBeanDao();
 
         /* create new UserBean and commit it to table */
-        UserBean user = new UserBean(firstName, lastName, alias, password);
+        UserBean user = new UserBean(firstName, lastName, alias, password, null);
         userDao.addUser(user);
 
         /* create new UserRoleBean and commit it to table */

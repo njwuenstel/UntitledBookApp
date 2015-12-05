@@ -22,7 +22,6 @@
         <mapping class="entity.UserBean" />
         <mapping resource="UserRoleBean.hbm.xml" />
         <mapping class="entity.UserRoleBean" />
-
     </session-factory>
 
 </hibernate-configuration>

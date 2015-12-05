@@ -27,7 +27,9 @@ public class GoodreadsServiceGateway {
      *
      *
      */
-    public void searchBook(String search) {
+    public ArrayList<WorkBean> searchBook(String search) {
+
+        ArrayList<WorkBean> bookBeanList = new ArrayList<>();
 
         try {
 
@@ -36,11 +38,10 @@ public class GoodreadsServiceGateway {
             HttpURLConnection connection = searchUtil.goodreadsGetConnection(url);
             /* Unmarshall the response */
             BookSearchResponseType unmarshalledResponse = unmarshaller.unmarshalBookSearch(connection.getInputStream());
-            /* Map the response  */
-            ArrayList<WorkBean> bookBeanList = mapper.mapSearchBook(unmarshalledResponse);
+            /* Map the response */
+            bookBeanList = mapper.mapSearchBook(unmarshalledResponse);
             /* Close the connection */
             searchUtil.closeConnection(connection);
-
 
         } catch (MalformedURLException e) {
 
@@ -54,5 +55,7 @@ public class GoodreadsServiceGateway {
 
             log.error("Exception occurred searching - " + search + ":/n" + e);
         }
+
+        return bookBeanList;
     }
 }

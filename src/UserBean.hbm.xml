@@ -15,5 +15,14 @@
         <property name="lastName" column="last_name" type="string"/>
         <property name="userAlias" column="user_alias" type="string"/>
         <property name="userPassword" column="user_pass" type="string"/>
+        <set name="haveReads" table="works_read"
+             inverse="false" lazy="false" fetch="select" cascade="all" >
+            <key>
+                <column name="user_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="entity.WorkBean">
+                <column name="work_id" not-null="true" />
+            </many-to-many>
+        </set>
     </class>
 </hibernate-mapping>

@@ -2,6 +2,8 @@ package entity;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Sun Prairie PC on 11/22/2015.
@@ -14,15 +16,18 @@ public class UserBean {
     private String userAlias;
     private String userPassword;
 
+    private Set<WorkBean> haveReads = new HashSet<>(0);
+
     /* no argument constructor */
     public UserBean() {}
 
-    public UserBean(String firstName, String lastName,
-                          String userAlias, String userPassword) {
+    public UserBean(String firstName, String lastName, String userAlias,
+                          String userPassword, Set<WorkBean> haveReads) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userAlias = userAlias;
         this.userPassword = userPassword;
+        this.haveReads = haveReads;
     }
 
     public int getUserId() {
@@ -65,6 +70,15 @@ public class UserBean {
         this.userPassword = userPassword;
     }
 
+    public Set<WorkBean> getHaveReads() {
+        return haveReads;
+    }
+
+    public void setHaveReads(Set<WorkBean> haveReads) {
+        this.haveReads = haveReads;
+    }
+
+    //TODO add havereads
     @Override
     public String toString() {
 

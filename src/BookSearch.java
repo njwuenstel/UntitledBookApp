@@ -1,6 +1,10 @@
 
+import entity.UserBean;
+import entity.WorkBean;
 import goodreads.service.GoodreadsSearchUtil;
 import goodreads.service.GoodreadsServiceGateway;
+import persistence.UserBeanDao;
+import persistence.WorkBeanDao;
 
 import javax.ws.rs.core.UriBuilder;
 import javax.xml.bind.JAXBContext;
@@ -14,7 +18,9 @@ import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 
 /**
@@ -32,6 +38,9 @@ public class BookSearch {
 
         BookSearch bookSearch = new BookSearch();
         GoodreadsServiceGateway gateway = new GoodreadsServiceGateway();
+        WorkBeanDao workBeanDao = new WorkBeanDao();
+        UserBeanDao userBeanDao = new UserBeanDao();
+
 
 //        bookSearch.searchBook("9780689840920");
 
@@ -43,7 +52,24 @@ public class BookSearch {
 //
 //        bookSearch.searchGoodReadsId("34");
 
-        gateway.searchBook("screwtape");
+        /* search for book and add first entry to work table */
+//        ArrayList<WorkBean> searchList = gateway.searchBook("watership down");
+//        System.out.println("Search returned " + searchList.size() + " items");
+//        WorkBean firstResult = searchList.get(0);
+//        System.out.println("Adding work " + firstResult.getTitle() + " to db");
+//        workBeanDao.addWork(firstResult);
+
+         /* add a works read to user */
+        // get user
+        UserBean user = userBeanDao.getUserByAlias("brix");
+        System.out.println("Returned:");
+        System.out.println(user);
+        // get book to add
+        WorkBean work = workBeanDao.getWorkByGoodreadsId("5907");
+        System.out.println(work);
+
+        userBeanDao.addReadWorkToUser(user, work);
+
     }
 
 
@@ -74,7 +100,6 @@ public class BookSearch {
      * the response
      *
      * @param search The search criteria
-     * @return a collection of unmarshalled book objects returned from the response
      */
     public void searchBook(String search) throws Exception {
 

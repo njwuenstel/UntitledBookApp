@@ -2,6 +2,8 @@ package entity;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Sun Prairie PC on 11/8/2015.
@@ -18,6 +20,8 @@ public class WorkBean {
     private String imageUrl;
     private String yearFirstPublished;
     private int numberOfPages;
+
+    private Set<UserBean> userReads = new HashSet<>();
 
     /* no argument constructor */
     public WorkBean() {}
@@ -101,6 +105,15 @@ public class WorkBean {
         this.numberOfPages = numberOfPages;
     }
 
+    public Set<UserBean> getUserReads() {
+        return userReads;
+    }
+
+    public void setUserReads(Set<UserBean> userReads) {
+        this.userReads = userReads;
+    }
+
+    //TODO: add userReads
     @Override
     public String toString() {
 
