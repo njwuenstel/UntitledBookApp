@@ -19,7 +19,7 @@ public class WorkBean {
     private String description;
     private String imageUrl;
     private String yearFirstPublished;
-    private int numberOfPages;
+    private String numberOfPages;
 
     private Set<UserBean> userReads = new HashSet<>();
 
@@ -30,6 +30,19 @@ public class WorkBean {
         this.title = title;
         this.author = author;
         this.goodreadsId = goodreadsId;
+    }
+
+    public WorkBean(String title, String author, String goodreadsId,
+                        String isbn, String description, String imageUrl,
+                            String yearFirstPublished, String numberOfPages) {
+        this.title = title;
+        this.author = author;
+        this.goodreadsId = goodreadsId;
+        this.isbn = isbn;
+        this.description = description;
+        this.imageUrl = imageUrl;
+        this.yearFirstPublished = yearFirstPublished;
+        this.numberOfPages = numberOfPages;
     }
 
     /* getters and setters */
@@ -97,11 +110,11 @@ public class WorkBean {
         this.yearFirstPublished = yearFirstPublished;
     }
 
-    public int getNumberOfPages() {
+    public String getNumberOfPages() {
         return numberOfPages;
     }
 
-    public void setNumberOfPages(int numberOfPages) {
+    public void setNumberOfPages(String numberOfPages) {
         this.numberOfPages = numberOfPages;
     }
 

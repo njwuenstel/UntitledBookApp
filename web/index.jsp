@@ -8,9 +8,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title></title>
+    <title>Untitled Book App</title>
   </head>
   <body>
+    Hola!
+    <a href="helloworld">Click Here </a>
 
+    <form action="helloworld" method="post">
+      <input type="text" name="bla">
+      <input type="submit" value="helloworld">
+      <span class="error">${error}</span>
+    </form>
+    <form action="helloworld" method="post">
+      <input type="text" name="book search">
+      <input type="submit" value="book">
+      <span class="error">${error}</span>
+    </form>
   </body>
 </html>

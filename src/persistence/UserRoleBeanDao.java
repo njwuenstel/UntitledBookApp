@@ -28,7 +28,7 @@ public class UserRoleBeanDao {
             transaction = session.beginTransaction();
             userId = (Integer) session.save(userRole);
             transaction.commit();
-            log.info("UserRole: " + userRole.getUserAlias() + "added to database");
+            log.info("UserRole: " + userRole.getUserAlias() + " added to database");
 
         } catch (MappingException e) {
 

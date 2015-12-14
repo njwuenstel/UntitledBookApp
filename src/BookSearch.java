@@ -42,7 +42,7 @@ public class BookSearch {
         UserBeanDao userBeanDao = new UserBeanDao();
 
 
-//        bookSearch.searchBook("9780689840920");
+        //bookSearch.searchBook("9780689840920");
 
 //        System.out.println("\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n\n");
 //
@@ -53,22 +53,23 @@ public class BookSearch {
 //        bookSearch.searchGoodReadsId("34");
 
         /* search for book and add first entry to work table */
-//        ArrayList<WorkBean> searchList = gateway.searchBook("watership down");
-//        System.out.println("Search returned " + searchList.size() + " items");
-//        WorkBean firstResult = searchList.get(0);
-//        System.out.println("Adding work " + firstResult.getTitle() + " to db");
-//        workBeanDao.addWork(firstResult);
+        ArrayList<WorkBean> searchList = gateway.searchBook("screwtape");
+        System.out.println("Search returned " + searchList.size() + " items");
+        WorkBean firstResult = searchList.get(0);
+        System.out.println("Adding work " + firstResult.getTitle() + " to db");
+        System.out.println("Work: " + firstResult.toString());
+        workBeanDao.addWork(firstResult);
 
-         /* add a works read to user */
-        // get user
-        UserBean user = userBeanDao.getUserByAlias("brix");
-        System.out.println("Returned:");
-        System.out.println(user);
-        // get book to add
-        WorkBean work = workBeanDao.getWorkByGoodreadsId("5907");
-        System.out.println(work);
-
-        userBeanDao.addReadWorkToUser(user, work);
+//         /* add a works read to user */
+//        // get user
+//        UserBean user = userBeanDao.getUserByAlias("brix");
+//        System.out.println("Returned:");
+//        System.out.println(user);
+//        // get book to add
+//        WorkBean work = workBeanDao.getWorkByGoodreadsId("5907");
+//        System.out.println(work);
+//
+//        userBeanDao.addReadWorkToUser(user, work);
 
     }
 
@@ -94,32 +95,32 @@ public class BookSearch {
         return inputStream;
     }
 
-    /**
-     * Encodes the search string and builds the url to send to the
-     * goodreads restful service. Calls the service and then unmarshalls
-     * the response
-     *
-     * @param search The search criteria
-     */
-    public void searchBook(String search) throws Exception {
-
-        /* Build the URL */
-        URL url = searchUtil.getSearchBookUrl(search);
-        /* Call the service */
-        InputStream responseStream = goodreadsGet(url);
-
-    }
-
-
-    public void showBook(String workId) throws Exception {
-
-        /* Build the URL */
-        URL url = searchUtil.getShowBookUrl(workId);
-        System.out.println(url);
-        goodreadsGet(url);
-    }
-
-    //https://www.goodreads.com/api/author_url/Orson%20Scott%20Card?key=BVYrzrOuMKyw4m5tGrOqQ
+//    /**
+//     * Encodes the search string and builds the url to send to the
+//     * goodreads restful service. Calls the service and then unmarshalls
+//     * the response
+//     *
+//     * @param search The search criteria
+//     */
+//    public void searchBook(String search) throws Exception {
+//
+//        /* Build the URL */
+//        URL url = searchUtil.getSearchBookUrl(search);
+//        /* Call the service */
+//        InputStream responseStream = goodreadsGet(url);
+//
+//    }
+//
+//
+//    public void showBook(String workId) throws Exception {
+//
+//        /* Build the URL */
+//        URL url = searchUtil.getShowBookUrl(workId);
+//        System.out.println(url);
+//        goodreadsGet(url);
+//    }
+//
+//    //https://www.goodreads.com/api/author_url/Orson%20Scott%20Card?key=BVYrzrOuMKyw4m5tGrOqQ
 
 
 

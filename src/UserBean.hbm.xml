@@ -15,6 +15,7 @@
         <property name="lastName" column="last_name" type="string"/>
         <property name="userAlias" column="user_alias" type="string"/>
         <property name="userPassword" column="user_pass" type="string"/>
+        <property name="emailAddress" column="user_email" type="string"/>
         <set name="haveReads" table="works_read"
              inverse="false" lazy="false" fetch="select" cascade="all" >
             <key>

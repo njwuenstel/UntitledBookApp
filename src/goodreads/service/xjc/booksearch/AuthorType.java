@@ -1,4 +1,3 @@
-
 package goodreads.service.xjc.booksearch;
 
 import javax.xml.bind.annotation.XmlAccessType;

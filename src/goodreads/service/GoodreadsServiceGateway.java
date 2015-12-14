@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 /**
- * Created by Sun Prairie PC on 11/7/2015.
+ * Search book
  */
 public class GoodreadsServiceGateway {
 
@@ -24,8 +24,11 @@ public class GoodreadsServiceGateway {
 
 
     /**
+     * Encodes the search string and builds the url to send to the
+     * goodreads restful service. Calls the service and then unmarshalls
+     * the response
      *
-     *
+     * @param search The search criteria
      */
     public ArrayList<WorkBean> searchBook(String search) {
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="GoodreadsResponse" type="GoodreadsResponseType"/>
+  <xs:element name="GoodreadsResponse" type="ShowBookResponseType"/>
   <xs:complexType name="small_image_urlType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
@@ -185,6 +185,11 @@
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
+  <xs:complexType name="buy_linksType">
+    <xs:sequence>
+      <xs:element type="buy_linkType" name="buy_link" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="workType">
     <xs:sequence>
       <xs:element type="idType" name="id"/>
@@ -213,6 +218,13 @@
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
+  <xs:complexType name="buy_linkType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="link"/>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="RequestType">
     <xs:sequence>
       <xs:element type="xs:string" name="authentication"/>
@@ -236,6 +248,8 @@
       <xs:element type="authorsType" name="authors"/>
       <xs:element type="xs:string" name="asin"/>
       <xs:element type="xs:string" name="kindle_asin"/>
+      <xs:element type="xs:string" name="marketplace_id"/>
+      <xs:element type="xs:string" name="country_code"/>
       <xs:element type="xs:string" name="publication_year"/>
       <xs:element type="xs:string" name="publication_month"/>
       <xs:element type="xs:string" name="publication_day"/>
@@ -251,6 +265,7 @@
       <xs:element type="xs:string" name="reviews_widget"/>
       <xs:element type="popular_shelvesType" name="popular_shelves"/>
       <xs:element type="book_linksType" name="book_links"/>
+      <xs:element type="buy_linksType" name="buy_links"/>
       <xs:element type="series_worksType" name="series_works"/>
       <xs:element type="similar_booksType" name="similar_books"/>
     </xs:choice>

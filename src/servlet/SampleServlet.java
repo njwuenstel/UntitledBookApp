@@ -1,10 +1,7 @@
+package servlet;
 
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-import java.io.*;
-import java.util.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 
 /**
  * @author nwuenstel

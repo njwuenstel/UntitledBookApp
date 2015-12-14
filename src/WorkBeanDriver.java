@@ -8,14 +8,16 @@ import persistence.WorkBeanDao;
 
 public class WorkBeanDriver {
 
+
     public void addNewAppUser(String firstName, String lastName,
-                                String alias, String password) {
+                   String alias, String password, String emailAddress) {
 
         UserBeanDao userDao = new UserBeanDao();
         UserRoleBeanDao userRoleDao = new UserRoleBeanDao();
 
         /* create new UserBean and commit it to table */
-        UserBean user = new UserBean(firstName, lastName, alias, password, null);
+        UserBean user = new UserBean(firstName, lastName, alias,
+                                        password, emailAddress, null);
         userDao.addUser(user);
 
         /* create new UserRoleBean and commit it to table */
@@ -32,7 +34,7 @@ public class WorkBeanDriver {
 //        WorkBean work = new WorkBean("Title of Book2", "Author of Book2", "1345678");
 //        dao.addWork(work);
 
-        wbd.addNewAppUser("Henry", "Cooper", "cooper", "password");
+        wbd.addNewAppUser("Henry", "Cooper", "cooper", "password", "test@test.com");
 
     }
 }

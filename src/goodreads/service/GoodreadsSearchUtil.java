@@ -14,7 +14,8 @@ import java.net.URL;
 import java.util.Scanner;
 
 /**
- * Created by Sun Prairie PC on 11/7/2015.
+ * Builds encoded URLs to call the Goodreads service.
+ * Opens and closes Http sessions.
  */
 public class GoodreadsSearchUtil {
 

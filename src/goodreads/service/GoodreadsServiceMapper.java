@@ -2,12 +2,14 @@ package goodreads.service;
 
 import entity.WorkBean;
 import goodreads.service.xjc.booksearch.BookSearchResponseType;
+import goodreads.service.xjc.showbook.BookType;
 import goodreads.service.xjc.showbook.ShowBookResponseType;
 
 import goodreads.service.xjc.booksearch.WorkType;
 import org.apache.log4j.Logger;
 import util.BookieLogger;
 
+import javax.xml.bind.JAXBElement;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -31,7 +33,7 @@ public class GoodreadsServiceMapper {
         List<WorkType> works = bookSearch.getSearch().getResults().getWork();
 
         /* iterate through works list adding mapped beans to workBeanList */
-        for(WorkType work : works) {
+        for(goodreads.service.xjc.booksearch.WorkType work : works) {
 
             /* new book bean */
             WorkBean workBean = new WorkBean();
@@ -41,15 +43,16 @@ public class GoodreadsServiceMapper {
             workBean.setGoodreadsId(work.getBestBook().getId().getValue());
 
             /* call method to get additional work info from goodreadsId */
-            //ShowBookResponseType showBook = showBook(workBean.getGoodreadsId());
-            //System.out.println("xxxxx" + showBook.getBook().getIdOrTitleOrTitleWithoutSeries().toString());
+            ShowBookResponseType showBookResponse = showBook(workBean.getGoodreadsId());
+            BookType book = showBookResponse.getBook();
 
-            workBean.setIsbn("");
-            workBean.setImageUrl("");
-            workBean.setYearFirstPublished("");
-            workBean.setNumberOfPages(0);
-            workBean.setDescription("");
+            //System.out.println("xxxxx" + workBean.getTitle() + ": " + showBookResponse.getBook().getIdOrTitleOrTitleWithoutSeries().get(0));
 
+            workBean.setIsbn(book.getIsbn());
+            workBean.setImageUrl(book.getImageUrl());
+            workBean.setYearFirstPublished(book.getPublicationYear());
+            workBean.setNumberOfPages(book.getNumPages());
+            workBean.setDescription(book.getDescription());
 
             /* add workbean to list */
             System.out.print(workBean);

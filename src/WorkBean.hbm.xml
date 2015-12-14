@@ -14,6 +14,11 @@
         <property name="goodreadsId" column="goodreads_id" type="string"/>
         <property name="title" column="title" type="string"/>
         <property name="author" column="author" type="string"/>
+        <property name="isbn" column="isbn" type="string"/>
+        <property name="imageUrl" column="image_url" type="string"/>
+        <property name="yearFirstPublished" column="year_published" type="string"/>
+        <property name="numberOfPages" column="num_pages" type="string"/>
+        <property name="description" column="description" type="string"/>
         <set name="userReads" table="works_read"
              inverse="false" lazy="false" fetch="select" cascade="all" >
             <key>

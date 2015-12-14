@@ -41,7 +41,7 @@ public class WorkBeanDao {
         return publicId;
     }
 
-    public WorkBean getWorkByGoodreadsId (String goodreadsId) {
+    public WorkBean getWorkByGoodreadsId(String goodreadsId) {
 
         WorkBean work = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();

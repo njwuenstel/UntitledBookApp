@@ -12,7 +12,9 @@ import javax.xml.bind.UnmarshallerHandler;
 import java.io.InputStream;
 
 /**
- * Created by Sun Prairie PC on 11/7/2015.
+ * unmarshalBookSearch
+ * unmarshalShowBook
+ *
  */
 public class GoodreadsUnmarshallers {
 
@@ -25,7 +27,7 @@ public class GoodreadsUnmarshallers {
      */
     public BookSearchResponseType unmarshalBookSearch(InputStream bookSearchResponse) {
 
-        BookSearchResponseType unmarshalledBookSearch = null;
+        BookSearchResponseType unmarshalledBookSearch;
 
 //        try {
             /*
@@ -64,28 +66,32 @@ public class GoodreadsUnmarshallers {
      */
     public ShowBookResponseType unmarshalShowBook(InputStream showBookResponse) {
 
-        ShowBookResponseType unmarshalledBookSearch = null;
+        ShowBookResponseType unmarshalledShowBook;
 
-        try {
-            /*
-             * Create a new instance of a JAXBContext object passing in the class to
-             * be bound.
-             */
-            JAXBContext jaxbContext = JAXBContext.newInstance(BookSearchResponseType.class);
+        // marshal object to file input stream
+        unmarshalledShowBook = JAXB.unmarshal(showBookResponse, ShowBookResponseType.class);
 
-            /* Instantiate the unmarshaller */
-            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
-            /* get unmarshalled book search object */
-            unmarshalledBookSearch = (ShowBookResponseType) unmarshaller.unmarshal(showBookResponse);
+//        try {
+//            /*
+//             * Create a new instance of a JAXBContext object passing in the class to
+//             * be bound.
+//             */
+//            JAXBContext jaxbContext = JAXBContext.newInstance(BookSearchResponseType.class);
+//
+//            /* Instantiate the unmarshaller */
+//            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+//
+//            /* get unmarshalled book search object */
+//            unmarshalledShowBook = (ShowBookResponseType) unmarshaller.unmarshal(showBookResponse);
+//
+//        } catch (JAXBException e) {
+//
+//            //TODO log
+//            e.printStackTrace();
+//        }
 
-        } catch (JAXBException e) {
-
-            //TODO log
-            e.printStackTrace();
-        }
-
-        return unmarshalledBookSearch;
+        return unmarshalledShowBook;
     }
 
 }

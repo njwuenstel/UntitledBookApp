@@ -15,6 +15,7 @@ public class UserBean {
     private String lastName;
     private String userAlias;
     private String userPassword;
+    private String emailAddress;
 
     private Set<WorkBean> haveReads = new HashSet<>(0);
 
@@ -22,11 +23,12 @@ public class UserBean {
     public UserBean() {}
 
     public UserBean(String firstName, String lastName, String userAlias,
-                          String userPassword, Set<WorkBean> haveReads) {
+            String userPassword, String emailAddress, Set<WorkBean> haveReads) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userAlias = userAlias;
         this.userPassword = userPassword;
+        this.emailAddress = emailAddress;
         this.haveReads = haveReads;
     }
 
@@ -78,6 +80,14 @@ public class UserBean {
         this.haveReads = haveReads;
     }
 
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAdress) {
+        this.emailAddress = emailAdress;
+    }
+
     //TODO add havereads
     @Override
     public String toString() {
@@ -90,6 +100,7 @@ public class UserBean {
         writer.println("Last Name: " + getLastName());
         writer.println("Full Name: " + getFirstName() + " " + getLastName());
         writer.println("User Alias: " + getUserAlias());
+        writer.println("Email Address: " + getEmailAddress());
         writer.println("User Password: not telling");
 
         return stringWriter.toString();

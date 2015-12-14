@@ -34,7 +34,7 @@ public class UserBeanDao {
             transaction = session.beginTransaction();
             userId = (Integer) session.save(user);
             transaction.commit();
-            log.info("User: " + user.getUserAlias() + "added to database");
+            log.info("User: " + user.getUserAlias() + " added to database");
 
         } catch (HibernateException e) {
 
@@ -62,7 +62,7 @@ public class UserBeanDao {
             transaction = session.beginTransaction();
             session.saveOrUpdate(user);
             transaction.commit();
-            log.info("User: " + user.getUserAlias() + "added to database");
+            log.info("User: " + user.getUserAlias() + " added to database");
 
         } catch (HibernateException e) {
 
@@ -98,7 +98,7 @@ public class UserBeanDao {
 
             session.update(user);
             transaction.commit();
-            log.info("User: " + user.getUserAlias() + "added to database");
+            log.info("User: " + user.getUserAlias() + " added to database");
 
         } catch (HibernateException e) {
 
