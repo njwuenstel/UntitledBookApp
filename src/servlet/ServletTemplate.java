@@ -25,28 +25,35 @@ public class ServletTemplate extends HttpServlet {
         // Set response content type
         response.setContentType("text/html");
 
-        String bla = request.getSession().getAttribute("bla").toString();
+//        String bla = request.getSession().getAttribute("bla").toString();
+//        String search = request.getSession().getAttribute("search").toString();
 
-        if (bla != null) {
+/*        if (bla != null) {
             message = bla;
         }
+        if (search != null) {
+            message = search;
+        }*/
+
 
         // Actual logic goes here.
         //PrintWriter out = response.getWriter();
         //out.println("<h1>" + message + "</h1>");
-        request.getRequestDispatcher("sample.jsp").forward(request, response);
+        request.getRequestDispatcher("/sample.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String bla = request.getParameter("bla");
+        String search = request.getParameter("search");
 
-        if (bla != null) {
+        if (bla != null && bla != "") {
             request.getSession().setAttribute("bla", bla);
-            //response.sendRedirect("home");
             response.sendRedirect("helloworld");
-        }
-        else {
+        } else if (search != null && search != "") {
+            request.getSession().setAttribute("search", search);
+            response.sendRedirect("helloworld");
+        } else {
             request.setAttribute("error", "Unknown user, please try again");
             request.getRequestDispatcher("/index.jsp").forward(request, response);
         }

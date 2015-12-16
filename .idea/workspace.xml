@@ -4,117 +4,26 @@
     <bookmark url="file://$PROJECT_DIR$/src/WorkBeanDriver.java" line="39" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8289b9-50cb-40b0-9b1f-c59ebce70fa5" name="Default" comment="lots of mvc stuff - remade xjc for showwork - finished the goodreads 2 part service call to return all book details (service mapper) - added fields to beans - simplified unmarshallers - removed some junk classes - added som junk classes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/BookSearchServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BuyLinkType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BuyLinksType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/NewUserServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/ServletTemplate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/account/accountConfirmation.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/account/createAccount.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/sample.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/user/userHome.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/workDisplay.jsp" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\out\production\UntitledBookApp\BookieMain.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\out\production\UntitledBookApp\BookshelfBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\out\production\UntitledBookApp\goodreads\service\xjc\booksearch\isbnResponse.xsd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\out\production\UntitledBookApp\goodreads\service\xjc\showbook\showbook.xsd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\BookieMain.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\BookshelfBean.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\goodreads\service\xjc\booksearch\isbnResponse.xsd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\goodreads\service\xjc\showbook\showbook.xsd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\web\add_user.jsp" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\SampleServlet.java" afterPath="$PROJECT_DIR$/src/servlet/SampleServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/booksearch/AuthorType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/booksearch/AuthorType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/AuthorType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/AuthorType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/AuthorsType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/AuthorsType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BestBookIdType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BestBookIdType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BookLinkType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BookLinkType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BookLinksType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BookLinksType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/BookSearch.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/BookSearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BookType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BookType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BooksCountType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/BooksCountType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/DefaultChapteringBookIdType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/DefaultChapteringBookIdType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/DefaultDescriptionLanguageCodeType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/DefaultDescriptionLanguageCodeType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/DescUserIdType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/DescUserIdType.class" />
+    <list default="true" id="ea8289b9-50cb-40b0-9b1f-c59ebce70fa5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/BeanUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bootstrap.jsp" />
+      <change type="MOVED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\servlet\NewUserServlet.java" afterPath="$PROJECT_DIR$/src/servlet/CreateAccountServlet.java" />
+      <change type="MOVED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\util\BookieLogger.java" afterPath="$PROJECT_DIR$/src/util/BookingtonLoggers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsSearchUtil.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsSearchUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsServiceGateway.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsServiceGateway.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsServiceMapper.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsServiceMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsUnmarshallers.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsUnmarshallers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/IdType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/IdType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ImageUrlType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ImageUrlType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ObjectFactory.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ObjectFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalLanguageIdType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalLanguageIdType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalPublicationDayType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalPublicationDayType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalPublicationMonthType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalPublicationMonthType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalPublicationYearType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/OriginalPublicationYearType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/PopularShelvesType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/PopularShelvesType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/RatingsCountType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/RatingsCountType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/RatingsSumType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/RatingsSumType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/RequestType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/RequestType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ReviewsCountType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ReviewsCountType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SeriesType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SeriesType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SeriesWorkType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SeriesWorkType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SeriesWorksType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SeriesWorksType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ShelfType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ShelfType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ShowBookResponseType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/ShowBookResponseType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SimilarBooksType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SimilarBooksType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SmallImageUrlType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/SmallImageUrlType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/TextReviewsCountType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/TextReviewsCountType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/WorkType.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/xjc/showbook/WorkType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AddAppUserServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddAppUserServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/booksearch/AuthorType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/booksearch/AuthorType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/AuthorType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/AuthorType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/AuthorsType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/AuthorsType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BestBookIdType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BestBookIdType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookLinkType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookLinkType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookLinksType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookLinksType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BookSearch.java" afterPath="$PROJECT_DIR$/src/BookSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BooksCountType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BooksCountType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DefaultChapteringBookIdType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DefaultChapteringBookIdType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DefaultDescriptionLanguageCodeType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DefaultDescriptionLanguageCodeType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DescUserIdType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DescUserIdType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/GoodreadsSearchUtil.java" afterPath="$PROJECT_DIR$/src/goodreads/service/GoodreadsSearchUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceGateway.java" afterPath="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceGateway.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceMapper.java" afterPath="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/GoodreadsUnmarshallers.java" afterPath="$PROJECT_DIR$/src/goodreads/service/GoodreadsUnmarshallers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/IdType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/IdType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ImageUrlType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ImageUrlType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ObjectFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalLanguageIdType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalLanguageIdType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalPublicationDayType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalPublicationDayType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalPublicationMonthType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalPublicationMonthType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalPublicationYearType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalPublicationYearType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/PopularShelvesType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/PopularShelvesType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RatingsCountType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RatingsCountType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RatingsSumType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RatingsSumType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RequestType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RequestType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ReviewsCountType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ReviewsCountType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesWorkType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesWorkType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesWorksType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesWorksType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ShelfType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ShelfType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ShowBookResponseType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ShowBookResponseType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SimilarBooksType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SimilarBooksType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SmallImageUrlType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SmallImageUrlType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/TextReviewsCountType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/TextReviewsCountType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UntitledBookApp.iml" afterPath="$PROJECT_DIR$/UntitledBookApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBean.hbm.xml" afterPath="$PROJECT_DIR$/src/UserBean.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/UserBean.java" afterPath="$PROJECT_DIR$/src/entity/UserBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/ServletTemplate.java" afterPath="$PROJECT_DIR$/src/servlet/ServletTemplate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/UntitledBookApp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/UntitledBookApp_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/persistence/UserBeanDao.java" afterPath="$PROJECT_DIR$/src/persistence/UserBeanDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/persistence/UserRoleBeanDao.java" afterPath="$PROJECT_DIR$/src/persistence/UserRoleBeanDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorkBean.hbm.xml" afterPath="$PROJECT_DIR$/src/WorkBean.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/WorkBean.java" afterPath="$PROJECT_DIR$/src/entity/WorkBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/persistence/WorkBeanDao.java" afterPath="$PROJECT_DIR$/src/persistence/WorkBeanDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorkBeanDriver.java" afterPath="$PROJECT_DIR$/src/WorkBeanDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/WorkType.java" afterPath="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/WorkType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/account/accountConfirmation.jsp" afterPath="$PROJECT_DIR$/web/account/accountConfirmation.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/account/createAccount.jsp" afterPath="$PROJECT_DIR$/web/account/createAccount.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/showbook.xml" afterPath="$PROJECT_DIR$/xml/showbook.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/showbook.xsd" afterPath="$PROJECT_DIR$/xml/showbook.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/sample.jsp" afterPath="$PROJECT_DIR$/web/sample.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -217,22 +126,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NewUserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/NewUserServlet.java">
+      <file leaf-file-name="createAccount.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/account/createAccount.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createAccount.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/account/createAccount.jsp">
+      <file leaf-file-name="CreateAccountServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlet/CreateAccountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.792453">
-              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+            <state vertical-scroll-proportion="-1.3289902">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.8461537">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bootstrap.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="39" column="6" selection-start-line="20" selection-start-column="0" selection-end-line="39" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserBeanDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/persistence/UserBeanDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionFactoryProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/persistence/SessionFactoryProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeanUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/BeanUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,80 +204,27 @@
         <entry file="file://$PROJECT_DIR$/src/entity/UserBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-              <folding>
-                <element signature="e#1882#1883#0" expanded="true" />
-                <element signature="e#1917#1918#0" expanded="true" />
-              </folding>
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkBean.hbm.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WorkBean.hbm.xml">
+      <file leaf-file-name="BookingtonLoggers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/BookingtonLoggers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workDisplay.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/workDisplay.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35795453">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accountConfirmation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/account/accountConfirmation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.716981">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userHome.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/user/userHome.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/sample.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.8846154">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServletTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/ServletTemplate.java">
+      <file leaf-file-name="GoodreadsSearchUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/goodreads/service/GoodreadsSearchUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -344,16 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/AuthorsType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BestBookIdType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookLinkType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookLinksType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BooksCountType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BuyLinkType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BuyLinksType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DefaultChapteringBookIdType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DefaultDescriptionLanguageCodeType.java" />
-        <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/DescUserIdType.java" />
         <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/IdType.java" />
         <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ImageUrlType.java" />
         <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/OriginalLanguageIdType.java" />
@@ -382,19 +282,29 @@
         <option value="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceMapper.java" />
         <option value="$PROJECT_DIR$/src/persistence/WorkBeanDao.java" />
         <option value="$PROJECT_DIR$/src/WorkBean.hbm.xml" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/UserBean.hbm.xml" />
         <option value="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceGateway.java" />
         <option value="$PROJECT_DIR$/src/BookSearch.java" />
-        <option value="$PROJECT_DIR$/src/WorkBeanDriver.java" />
         <option value="$PROJECT_DIR$/web/createAccount.jsp" />
         <option value="$PROJECT_DIR$/web/user/accountConfirmation.jsp" />
-        <option value="$PROJECT_DIR$/web/account/accountConfirmation.jsp" />
         <option value="$PROJECT_DIR$/web/user/userHome.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/NewUserServlet.java" />
-        <option value="$PROJECT_DIR$/web/account/createAccount.jsp" />
         <option value="$PROJECT_DIR$/src/entity/UserBean.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/sample.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/ServletTemplate.java" />
+        <option value="$PROJECT_DIR$/web/bootstrap.jsp" />
+        <option value="$PROJECT_DIR$/web/account/accountConfirmation.jsp" />
+        <option value="$PROJECT_DIR$/src/util/BookieLogger.java" />
+        <option value="$PROJECT_DIR$/src/util/BookingtonLoggers.java" />
+        <option value="$PROJECT_DIR$/src/WorkBeanDriver.java" />
+        <option value="$PROJECT_DIR$/src/persistence/UserBeanDao.java" />
+        <option value="$PROJECT_DIR$/src/util/BeanUtil.java" />
+        <option value="dbtable:/b04fbc52/83339731-e8e7-442c-8009-d363d10aae62/books..user_roles" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/account/createAccount.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/CreateAccountServlet.java" />
       </list>
     </option>
   </component>
@@ -484,10 +394,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="UntitledBookApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -614,24 +520,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UntitledBookApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UntitledBookApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="servlet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -651,24 +539,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="persistence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UntitledBookApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UntitledBookApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -733,7 +603,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -765,6 +635,7 @@
       <recent name="goodreads.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
       <recent name="servlet" />
       <recent name="persistence" />
       <recent name="entity" />
@@ -1366,7 +1237,7 @@
       <workItem from="1449903994822" duration="462000" />
       <workItem from="1449905975090" duration="11589000" />
       <workItem from="1449990728629" duration="2802000" />
-      <workItem from="1449994799359" duration="15654000" />
+      <workItem from="1449994799359" duration="29256000" />
     </task>
     <task id="LOCAL-00001" summary="some stuff taking shape">
       <created>1444631043592</created>
@@ -1440,11 +1311,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449304101318</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lots of mvc stuff - remade xjc for showwork - finished the goodreads 2 part service call to return all book details (service mapper) - added fields to beans - simplified unmarshallers - removed some junk classes - added som junk classes">
+      <created>1450080483465</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1450080483465</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183872000" />
+    <option name="totallyTimeSpent" value="197474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1461,15 +1338,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13993174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30716723" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30716723" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39078498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24045801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1481,49 +1358,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4453925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42832765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4675768" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4675768" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4675768" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23435114" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33959043" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13993174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30716723" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39078498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24045801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1553,7 +1397,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties />
+        </breakpoint>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1562,70 +1417,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/PopularShelvesType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RatingsCountType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RatingsSumType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/RequestType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ReviewsCountType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesWorkType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/SeriesWorksType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/goodreads/service/xjc/showbook/ShelfType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1750,7 +1541,7 @@
         <state vertical-scroll-proportion="0.3046595">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="981" selection-end-column="0" />
           <folding>
-            <element signature="e#0#23078#0" expanded="true" />
+            <element signature="e#0#23078#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1815,14 +1606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/BookSearchServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.0384617">
@@ -1835,27 +1618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.0384617">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b04fbc52/83339731-e8e7-442c-8009-d363d10aae62/books..user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence/UserBeanDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1892,58 +1654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WorkBeanDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/SampleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ServletTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sample.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user/userHome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/account/accountConfirmation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.716981">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1953,33 +1667,6 @@
         <state vertical-scroll-proportion="5.8846154">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/NewUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/account/createAccount.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.792453">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-          <folding>
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1993,9 +1680,183 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/workDisplay.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35795453">
+        <state vertical-scroll-proportion="-4.8461537">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/BookSearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sample.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2075472">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/userHome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/account/accountConfirmation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3076923">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goodreads/service/GoodreadsSearchUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WorkBeanDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24147727">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ServletTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3713355">
+          <caret line="53" column="64" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-50.33225">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/BookingtonLoggers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/SessionFactoryProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/BeanUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b04fbc52/83339731-e8e7-442c-8009-d363d10aae62/books..user_roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b04fbc52/83339731-e8e7-442c-8009-d363d10aae62/books..user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bootstrap.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="39" column="6" selection-start-line="20" selection-start-column="0" selection-end-line="39" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.8461537">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/UserBeanDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/account/createAccount.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/CreateAccountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3289902">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

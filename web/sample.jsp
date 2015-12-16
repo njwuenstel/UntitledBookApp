@@ -11,6 +11,9 @@
     <title>This is how we do it.</title>
 </head>
 <body>
-  Does this work: ${bla}
+  <pre>
+    Does this work: ${bla}
+    How about this: ${search}
+  </pre>
 </body>
 </html>

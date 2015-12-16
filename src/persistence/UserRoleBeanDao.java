@@ -1,13 +1,12 @@
 package persistence;
 
-import entity.UserBean;
 import entity.UserRoleBean;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.MappingException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import util.BookieLogger;
+import util.BookingtonLoggers;
 
 /**
  * Created by Sun Prairie PC on 11/28/2015.
@@ -17,7 +16,7 @@ public class UserRoleBeanDao {
     /* Method to CREATE a UserRole in the database */
     public Integer addUserRole(UserRoleBean userRole) {
 
-        Logger log = BookieLogger.getDatabaseLog();
+        Logger log = BookingtonLoggers.getDatabaseLog();
 
         log.debug("Add UserRole - Opening session");
         Session session = SessionFactoryProvider.getSessionFactory().openSession();

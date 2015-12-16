@@ -1,8 +1,7 @@
 package goodreads.service;
 
-import entity.WorkBean;
 import org.apache.log4j.Logger;
-import util.BookieLogger;
+import util.BookingtonLoggers;
 
 import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
@@ -19,7 +18,7 @@ import java.util.Scanner;
  */
 public class GoodreadsSearchUtil {
 
-    Logger log = BookieLogger.getServiceLog();
+    Logger log = BookingtonLoggers.getServiceLog();
 
     protected static String GOODREADS_PATH = "https://www.goodreads.com";
     protected static String GOODREADS_KEY = "BVYrzrOuMKyw4m5tGrOqQ&q";

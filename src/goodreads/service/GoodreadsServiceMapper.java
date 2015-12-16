@@ -7,9 +7,8 @@ import goodreads.service.xjc.showbook.ShowBookResponseType;
 
 import goodreads.service.xjc.booksearch.WorkType;
 import org.apache.log4j.Logger;
-import util.BookieLogger;
+import util.BookingtonLoggers;
 
-import javax.xml.bind.JAXBElement;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -22,7 +21,7 @@ import java.util.List;
  */
 public class GoodreadsServiceMapper {
 
-    Logger log = BookieLogger.getServiceLog();
+    Logger log = BookingtonLoggers.getServiceLog();
 
     GoodreadsSearchUtil searchUtil = new GoodreadsSearchUtil();
     GoodreadsUnmarshallers unmarshaller = new GoodreadsUnmarshallers();

@@ -3,7 +3,7 @@ package goodreads.service;
 import entity.WorkBean;
 import goodreads.service.xjc.booksearch.BookSearchResponseType;
 import org.apache.log4j.Logger;
-import util.BookieLogger;
+import util.BookingtonLoggers;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class GoodreadsServiceGateway {
 
-    Logger log = BookieLogger.getServiceLog();
+    Logger log = BookingtonLoggers.getServiceLog();
 
     GoodreadsSearchUtil searchUtil = new GoodreadsSearchUtil();
     GoodreadsServiceMapper mapper = new GoodreadsServiceMapper();

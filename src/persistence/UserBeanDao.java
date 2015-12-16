@@ -5,11 +5,9 @@ import entity.WorkBean;
 import org.apache.log4j.Logger;
 import org.hibernate.*;
 import org.hibernate.criterion.Restrictions;
-import util.BookieLogger;
+import util.BookingtonLoggers;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -18,12 +16,12 @@ import java.util.Set;
  */
 public class UserBeanDao {
 
-    Logger log = BookieLogger.getDatabaseLog();
+    Logger log = BookingtonLoggers.getDatabaseLog();
 
     /* Method to CREATE a user in the database */
     public Integer addUser(UserBean user) {
 
-        Logger log = BookieLogger.getDatabaseLog();
+        Logger log = BookingtonLoggers.getDatabaseLog();
 
         log.debug("Add User - Opening session");
         Session session = SessionFactoryProvider.getSessionFactory().openSession();

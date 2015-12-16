@@ -9,6 +9,10 @@
         </element>
         <element id="directory" name="lib">
           <element id="file-copy" path="$APPLICATION_HOME_DIR$/lib/log4j.jar" />
+          <element id="library" level="project" name="org.glassfish.jersey:jax-rs-ri:2.0-rc1" />
+          <element id="library" level="project" name="org.hibernate:hibernate-core:4.2.0.Final" />
+          <element id="library" level="module" name="JUnit4" module-name="UntitledBookApp" />
+          <element id="file-copy" path="C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.37-bin.jar" />
         </element>
       </element>
     </root>

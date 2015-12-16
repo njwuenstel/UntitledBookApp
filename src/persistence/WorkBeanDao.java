@@ -7,7 +7,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
-import util.BookieLogger;
+import util.BookingtonLoggers;
 
 /**
  * @author paulawaite
@@ -15,7 +15,7 @@ import util.BookieLogger;
  */
 public class WorkBeanDao {
 
-    Logger log = BookieLogger.getDatabaseLog();
+    Logger log = BookingtonLoggers.getDatabaseLog();
 
     /* Method to CREATE a work in the database */
     public Integer addWork(WorkBean work) {
