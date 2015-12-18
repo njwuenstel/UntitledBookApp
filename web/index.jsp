@@ -17,8 +17,34 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
   <body>
+    <%--<img id="image" src="webresources/image/bookington_banner.jpg">--%>
+    <img style="width:100%;" id="image" src="webresources/image/bookington_banner.jpg">
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="content.html">Divisions</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+    <div style="color: #FF0000;">${errorMessage}</div>
     Hola!
     <a href="helloworld">Click Here </a>
+
 
     <form action="helloworld" method="post">
       <input type="text" name="bla">
