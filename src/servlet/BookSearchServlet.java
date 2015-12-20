@@ -1,11 +1,15 @@
 package servlet;
 
+import entity.WorkBean;
+import goodreads.service.GoodreadsServiceGateway;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 
 // Extend HttpServlet class
 @WebServlet(
@@ -14,11 +18,12 @@ import java.io.IOException;
 )
 public class BookSearchServlet extends HttpServlet {
 
-    private String message;
+    private String search;
+    private GoodreadsServiceGateway gateway;
 
     public void init() throws ServletException {
         // Do required initialization
-        message = "Hello World";
+        gateway = new GoodreadsServiceGateway();
     }
 
     @Override
@@ -29,10 +34,6 @@ public class BookSearchServlet extends HttpServlet {
 
         String bla = request.getSession().getAttribute("bla").toString();
 
-        if (bla != null) {
-            message = bla;
-        }
-
         // Actual logic goes here.
         //PrintWriter out = response.getWriter();
         //out.println("<h1>" + message + "</h1>");
@@ -41,20 +42,24 @@ public class BookSearchServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String bla = request.getParameter("bla");
 
-        if (bla != null) {
-            request.getSession().setAttribute("bla", bla);
+        search = request.getParameter("search");
+
+        if (search == null || search.trim().isEmpty()) {
+
+            // add error and re-route
+            request.setAttribute("errorMessage", "Search should not be blank");
+            request.getRequestDispatcher("bookington").forward(request, response);
+
+        } else {
+
+            // try to call service and post up search result
+            ArrayList<WorkBean> searchResults = gateway.searchBook(search);
+            // add results to request
+            request.setAttribute("searchResults", searchResults);
             //response.sendRedirect("home");
-            response.sendRedirect("helloworld");
-        }
-        else {
-            request.setAttribute("error", "Unknown user, please try again");
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
+            request.getRequestDispatcher("search/searchResults.jsp").forward(request, response);
         }
     }
 
-    public void destroy() {
-        // do nothing.
-    }
 }

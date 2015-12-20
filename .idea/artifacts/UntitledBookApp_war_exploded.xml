@@ -13,6 +13,10 @@
           <element id="library" level="project" name="org.hibernate:hibernate-core:4.2.0.Final" />
           <element id="library" level="module" name="JUnit4" module-name="UntitledBookApp" />
           <element id="file-copy" path="C:/Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.37-bin.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/taglibs-standard-spec-1.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/taglibs-standard-compat-1.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/taglibs-standard-impl-1.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/taglibs-standard-jstlel-1.2.5.jar" />
         </element>
       </element>
     </root>

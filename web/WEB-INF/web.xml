@@ -4,11 +4,10 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <!--
-    <servlet>
-        <servlet-name>serverTemplate</servlet-name>
-        <servlet-class>servlet.ServletTemplate</servlet-class>
-    </servlet>-->
+    <!-- session closes after 30 min -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
 
     <servlet-mapping>
         <servlet-name>serverTemplate</servlet-name>
@@ -42,7 +41,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>BookingtonPage</web-resource-name>
-            <url-pattern>/bookington.jsp</url-pattern>
+            <url-pattern>/bookington</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>admin</role-name>

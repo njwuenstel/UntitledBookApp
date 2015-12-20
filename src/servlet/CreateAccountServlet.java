@@ -55,10 +55,12 @@ public class CreateAccountServlet extends HttpServlet {
                 BeanUtil beanUtil = new BeanUtil();
 
                 beanUtil.addNewAppUser(firstName, lastName, userAlias, userPassword, userEmail);
+                //TODO log success
 
                 /* redirect to confirmation screen */
                 request.getSession().setAttribute("firstName", firstName);
                 request.getRequestDispatcher(CONFIRMATION_URL).forward(request, response);
+
             }
         // error handling for invalid inputs
         } catch (Exception e) {

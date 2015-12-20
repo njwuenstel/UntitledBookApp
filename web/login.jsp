@@ -6,21 +6,18 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Create a new Bookington account</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
-  <BODY>
-  <img style="width:100%;" id="image" src="webresources/image/bookington_banner.jpg">
-  <div class="container">
-    <h1>Login to Bookington</h1>
-    <div style="color: #FF0000;">${errorMessage}</div>
+<head>
+  <title>Bookington Login</title>
+  <c:import url="webresources/jsp/head.jsp" />
+</head>
+
+<body>
+  <c:import url="webresources/jsp/banner.jsp" />
+  <div style="color: #FF0000;">${errorMessage}</div>
+
     <form role="form" action="j_security_check" method="post">
       <div class="form-group">
         <label for="j_username">User Name:</label>
@@ -32,7 +29,9 @@
       </div>
       <button type="submit" class="btn btn-default">Log in</button>
     </form>
-    <li><a href="index.jsp">Take me Home</a></li>
+    <div>
+      <li><a href="account/createAccount.jsp">Create a new account</a></li>
+    </div>
   </div>
   </BODY>
 </HTML>

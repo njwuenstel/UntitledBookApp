@@ -119,17 +119,20 @@ public class UserBeanDao {
         Criteria criteria = session.createCriteria(UserBean.class);
         criteria.add(Restrictions.like("userAlias", userAlias));
 
-        try {
+        /* null safe for criteria list() */
+        if(criteria.list().size() > 0) {
+            try {
 
-            user = (UserBean) criteria.list().get(0);
+                user = (UserBean) criteria.list().get(0);
 
-        } catch (HibernateException e) {
-            log.error("Exception attempting search for user with alias: " + userAlias);
-            log.error(e);
-            e.printStackTrace();
-        } finally {
-            session.close();
-            log.debug("Add User - Session closed");
+            } catch (HibernateException e) {
+                log.error("Exception attempting search for user with alias: " + userAlias);
+                log.error(e);
+                e.printStackTrace();
+            } finally {
+                session.close();
+                log.debug("Add User - Session closed");
+            }
         }
         return user;
     }

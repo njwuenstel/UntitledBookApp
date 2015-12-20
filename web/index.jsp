@@ -6,55 +6,48 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bookington - Go Read a Book</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <c:import url="webresources/jsp/head.jsp" />
+
 </head>
-  <body>
-    <%--<img id="image" src="webresources/image/bookington_banner.jpg">--%>
-    <img style="width:100%;" id="image" src="webresources/image/bookington_banner.jpg">
-  <div class="navbar navbar-inverse" role="navigation">
+
+<body>
+
+  <c:import url="webresources/jsp/banner.jsp" />
+
+  <div style="color: #FF0000;">${errorMessage}</div>
+
+  <a name="about"></a>
+  <div class="intro-header">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h1>Welcome to Bookington</h1>
+            <h3>Go read a book...</h3>
+            <hr class="intro-divider">
+            <ul class="list-inline intro-social-buttons">
+              <li>
+                <a href="bookington" class="btn btn-default btn-lg"> <span class="network-name">Login to Bookington</span></a>
+              </li>
+              <li>
+                <a href="account/createAccount.jsp" class="btn btn-default btn-lg"> <span class="network-name">Create an account</span></a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-default btn-lg"> <span class="network-name">Sign in as a different user</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="content.html">Divisions</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#faqs">FAQs</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
     </div>
   </div>
-    <div style="color: #FF0000;">${errorMessage}</div>
-    Hola!
-    <a href="helloworld">Click Here </a>
 
-
-    <form action="helloworld" method="post">
-      <input type="text" name="bla">
-      <input type="submit" value="click and see">
-      <span class="error">${error}</span>
-    </form>
-    <form action="helloworld" method="post">
-      <input type="text" name="search">
-      <input type="submit" value="or click here">
-      <span class="error">${error}</span>
-    </form>
   </body>
 </html>

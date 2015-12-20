@@ -1,12 +1,21 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>You foolish person!</title>
+    <title>That didn't work.</title>
+
+    <c:import url="/webresources/jsp/head.jsp" />
+
 </head>
+
 <body>
 
-<p>Your login was completely unsuccessful</p>
+<c:import url="/webresources/jsp/banner.jsp" />
+
+<div style="color: #FF0000;">${errorMessage}</div>
+
+<p>Your login was completely unsuccessful.</p>
 <a href="index.jsp">Take me Home</a>
 
 </body>

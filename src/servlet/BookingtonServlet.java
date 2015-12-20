@@ -30,21 +30,21 @@ public class BookingtonServlet extends HttpServlet {
         // Set response content type
         response.setContentType("text/html");
 
-//        String bla = request.getSession().getAttribute("bla").toString();
-//        String search = request.getSession().getAttribute("search").toString();
+        //String name = request.getRemoteUser();
 
-/*        if (bla != null) {
-            message = bla;
+        String userName = request.getUserPrincipal().getName();
+        UserBeanDao userBeanDao = new UserBeanDao();
+        UserBean user = userBeanDao.getUserByAlias(userName);
+
+        if (user != null) {
+
+            request.getSession().setAttribute("user", user);
+            response.sendRedirect("/bookington.jsp");
+
+        } else {
+            request.setAttribute("errorMessage", "User: " + userName + " was not found. Please try again");
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
         }
-        if (search != null) {
-            message = search;
-        }*/
-
-
-        // Actual logic goes here.
-        //PrintWriter out = response.getWriter();
-        //out.println("<h1>" + message + "</h1>");
-        request.getRequestDispatcher("/bookington.jsp").forward(request, response);
     }
 
     @Override

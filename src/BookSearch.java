@@ -32,8 +32,6 @@ public class BookSearch {
     static String GOODREADS_KEY = "BVYrzrOuMKyw4m5tGrOqQ&q";
     GoodreadsSearchUtil searchUtil = new GoodreadsSearchUtil();
 
-
-
     public static void main(String[] args) throws Exception {
 
         BookSearch bookSearch = new BookSearch();

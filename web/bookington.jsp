@@ -6,71 +6,77 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bookington - Go Read a Book</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <c:import url="webresources/jsp/head.jsp" />
+
 </head>
+
 <body>
-<img style="width:100%;" id="image" src="webresources/image/bookington_banner.jpg">
-<div class="navbar navbar-inverse" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="content.html">Divisions</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
 
-<%--${pageContext.request.userPrincipal.name}
-<!-- or -->
-${pageContext.request.remoteUser}--%>
+<c:import url="webresources/jsp/banner.jsp" />
 
-<%--${sessionContext.response.user.toString()}--%>
+<div style="color: #FF0000;">${errorMessage}</div>
 
-<jsp:useBean
-        id="user"
-        class="entity.UserBean"
-        scope="session" />
+    ${pageContext.request.userPrincipal.name}
+    ${pageContext.request.remoteUser}
 
-blabla ${sessionScope[user.firstName]}
+
+    <jsp:useBean id="user"  class="entity.UserBean" scope="session" />
+
+    <c:set var="booksRead" scope="session" value="${user.haveReads}" />/>
 
 
 
-First Name: <jsp:getProperty name="user" property="firstName" />
+    First Name: <jsp:getProperty name="user" property="firstName" />
+    First Name: ${user.firstName}
 
 
-<a href="helloworld">Click Here </a>
+
+      <div class="container">
+
+          <form role="form" action="booksearch" method="post">
+              <div class="form-group">
+                  <label for="search">Search book by Title Author or ISBN:</label>
+                  <input type="text" class="form-control" id="search" name="search" required="required">
+              </div>
+              <button type="submit" class="btn btn-default">Go</button>
+          </form>
+
+        <h2>Books you have read:</h2>
+        <p>Bookington is on your side.</p>
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+          </tr>
+          </thead>
+          <tbody>
+          <c:forEach var="book" items="${booksRead}">
+            <tr>
+              <td>${book.title}</td>
+              <td>${book.author}</td>
+            </tr>
+          </c:forEach>
+          </tbody>
+        </table>
+      </div>
 
 
-<form action="helloworld" method="post">
-  <input type="text" name="bla">
-  <input type="submit" value="click and see">
-  <span class="error">${error}</span>
-</form>
-<form action="helloworld" method="post">
-  <input type="text" name="search">
-  <input type="submit" value="or click here">
-  <span class="error">${error}</span>
-</form>
-</body>
+      <form action="helloworld" method="post">
+        <input type="text" name="bla">
+        <input type="submit" value="click and see">
+        <span class="error">${error}</span>
+      </form>
+      <form action="helloworld" method="post">
+        <input type="text" name="search">
+        <input type="submit" value="or click here">
+        <span class="error">${error}</span>
+      </form>
+    </body>
 </html>
