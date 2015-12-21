@@ -1,6 +1,9 @@
 package servlet;
 
+import entity.UserBean;
 import entity.WorkBean;
+import goodreads.service.GoodreadsServiceGateway;
+import util.BeanUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,15 +15,17 @@ import java.io.IOException;
 // Extend HttpServlet class
 @WebServlet(
         name = "bookDisplay",
-        urlPatterns = { "/book" }
+        urlPatterns = { "/bookdisplay" }
 )
 public class BookDisplayServlet extends HttpServlet {
 
-    private String message;
+    GoodreadsServiceGateway gateway;
+    BeanUtil beanUtil;
 
     public void init() throws ServletException {
-        // Do required initialization
-        message = "Hello World";
+
+        gateway = new GoodreadsServiceGateway();
+        beanUtil = new BeanUtil();
     }
 
     @Override
@@ -29,37 +34,42 @@ public class BookDisplayServlet extends HttpServlet {
         // Set response content type
         response.setContentType("text/html");
 
-        /* get */
-        String workId = request.getParameter("book");
-
-        //WorkBean workBean = request.getSession().setAttribute("search", search);
-
-
-
-
-//        String bla = request.getSession().getAttribute("bla").toString();
-//        String search = request.getSession().getAttribute("search").toString();
-
-/*        if (bla != null) {
-            message = bla;
-        }
-        if (search != null) {
-            message = search;
-        }*/
-
-
-        // Actual logic goes here.
-        //PrintWriter out = response.getWriter();
-        //out.println("<h1>" + message + "</h1>");
-        request.getRequestDispatcher("/sample.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String bla = request.getParameter("bla");
-        String search = request.getParameter("search");
 
-        if (bla != null && bla != "") {
+        String isbnEntry = request.getParameter("isbnEntry");
+        String submitType = request.getParameter("isbnFormSubmit");
+        WorkBean isbnBean = gateway.getBookFromIsbn(isbnEntry);
+
+        if(submitType == null) {
+            //no button has been selected
+
+        } else if(submitType.equals("bookInfo")) {
+
+            /* add bean to request */
+            request.setAttribute("isbn", isbnEntry );
+            request.setAttribute("isbnBean", isbnBean );
+
+            /* forward the request to bookInfo */
+            request.getRequestDispatcher("search/bookInfo.jsp").forward(request, response);
+
+        } else if(submitType.equals("addToHaveReads")) {
+
+            /* addToHaveReads button was pressed */
+            UserBean user = (UserBean) request.getSession().getAttribute("user");
+
+            /*  */
+            beanUtil.addWorksReadToUser(user.getUserAlias(), isbnBean);
+            request.getRequestDispatcher("reload").forward(request, response);
+
+
+        } else {
+            //someone has altered the HTML and sent a different value!
+        }
+
+/*        if (bla != null && bla != "") {
             request.getSession().setAttribute("bla", bla);
             response.sendRedirect("helloworld");
         } else if (search != null && search != "") {
@@ -67,8 +77,8 @@ public class BookDisplayServlet extends HttpServlet {
             response.sendRedirect("helloworld");
         } else {
             request.setAttribute("error", "Unknown user, please try again");
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
-        }
+            request.getRequestDispatcher("/bookInfo.jsp").forward(request, response);
+        }*/
     }
 
     public void destroy() {

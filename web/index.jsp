@@ -39,9 +39,6 @@
               <li>
                 <a href="account/createAccount.jsp" class="btn btn-default btn-lg"> <span class="network-name">Create an account</span></a>
               </li>
-              <li>
-                <a href="#" class="btn btn-default btn-lg"> <span class="network-name">Sign in as a different user</span></a>
-              </li>
             </ul>
           </div>
         </div>

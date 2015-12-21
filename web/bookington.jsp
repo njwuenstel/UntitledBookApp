@@ -18,65 +18,55 @@
 
 <body>
 
-<c:import url="webresources/jsp/banner.jsp" />
+  <c:import url="webresources/jsp/banner.jsp" />
 
-<div style="color: #FF0000;">${errorMessage}</div>
-
-    ${pageContext.request.userPrincipal.name}
-    ${pageContext.request.remoteUser}
-
+  <div style="color: #FF0000;">${errorMessage}</div>
 
     <jsp:useBean id="user"  class="entity.UserBean" scope="session" />
+    <c:set var="booksRead" scope="session" value="${user.haveReads}" />
 
-    <c:set var="booksRead" scope="session" value="${user.haveReads}" />/>
+  <div class="container">
 
+      <h2>Bookington: ${user.userAlias} style</h2>
+      <form role="form" action="booksearch" method="post">
+          <div class="form-group">
+              <label for="search">Search book by Title Author or ISBN:</label>
+              <input type="text" class="form-control" id="search" name="search" required="required">
+          </div>
+          <button type="submit" class="btn btn-default">Go</button>
+      </form>
 
-
-    First Name: <jsp:getProperty name="user" property="firstName" />
-    First Name: ${user.firstName}
-
-
-
-      <div class="container">
-
-          <form role="form" action="booksearch" method="post">
-              <div class="form-group">
-                  <label for="search">Search book by Title Author or ISBN:</label>
-                  <input type="text" class="form-control" id="search" name="search" required="required">
-              </div>
-              <button type="submit" class="btn btn-default">Go</button>
-          </form>
-
-        <h2>Books you have read:</h2>
-        <p>Bookington is on your side.</p>
-        <table class="table">
+    <h2>Books you have read:</h2>
+      <table class="table">
           <thead>
           <tr>
-            <th>Title</th>
-            <th>Author</th>
+              <th>Cover</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN</th>
           </tr>
           </thead>
           <tbody>
-          <c:forEach var="book" items="${booksRead}">
-            <tr>
-              <td>${book.title}</td>
-              <td>${book.author}</td>
-            </tr>
+          <c:forEach var="work" items="${booksRead}">
+              <jsp:useBean id="work"  class="entity.WorkBean" scope="page" />
+
+              <%-- image of book cover --%>
+              <tr>
+                  <td style="padding:15px 0px 15px 0px;">
+                      <a>
+                          <img src="${work.imageUrl}" class="img-responsive voc_list_preview_img" alt="" title="">
+                      </a>
+                  </td>
+
+                  </td>
+                  <td>${work.title}</td>
+                  <td>${work.author}</td>
+                  <td>${work.isbn}</td>
+              </tr>
           </c:forEach>
           </tbody>
-        </table>
-      </div>
+      </table>
+  </div>
 
-
-      <form action="helloworld" method="post">
-        <input type="text" name="bla">
-        <input type="submit" value="click and see">
-        <span class="error">${error}</span>
-      </form>
-      <form action="helloworld" method="post">
-        <input type="text" name="search">
-        <input type="submit" value="or click here">
-        <span class="error">${error}</span>
-      </form>
-    </body>
+  </body>
 </html>

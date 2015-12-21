@@ -23,61 +23,52 @@
 <div style="color: #FF0000;">${errorMessage}</div>
 
 <jsp:useBean id="user"  class="entity.UserBean" scope="session" />
-<c:set var="results" scope="request" value="${searchResults}" />/>
+<c:set var="results" scope="request" value="${searchResults}" />
+<c:set var="searchCriteria" scope="request" value="${search}" />
 
 <div class="container">
 
-  <h2>Search results for: ${search}</h2>
-  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+  <h2>Search results for: ${searchCriteria}</h2>
+
+  <form role="form" action="bookdisplay" method="post">
+    <div class="form-group">
+      <label for="isbnEntry">Enter ISBN:</label>
+      <input type="text" class="form-control" id="isbnEntry" name="isbnEntry" required="required">
+    </div>
+    <button type="submit" class="btn btn-default" name="isbnFormSubmit" value="bookInfo">Get Book Info</button>
+    <button type="submit" class="btn btn-default" name="isbnFormSubmit" value="addToHaveReads">Add to Have Reads</button>
+  </form>
+
   <table class="table">
     <thead>
     <tr>
       <th>Cover</th>
       <th>Title</th>
       <th>Author</th>
-      <th>Info</th>
-      <th>Add</th>
+      <th>ISBN</th>
     </tr>
     </thead>
     <tbody>
     <c:forEach var="work" items="${results}">
       <jsp:useBean id="work"  class="entity.WorkBean" scope="page" />
-      <tr class='clickable-row' data-href='url://'>
 
-<%--      jQuery(document).ready(function($) {
-        $(".clickable-row").click(function() {
-        window.document.location = $(this).data("href");
-        });
-      });--%>
-
+      <%-- image of book cover --%>
       <tr>
         <td style="padding:15px 0px 15px 0px;">
           <a>
             <img src="${work.imageUrl}" class="img-responsive voc_list_preview_img" alt="" title="">
           </a>
       </td>
-  <%--        <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail"> <!-- class thumbnail , no 2 -->
-              <img src="${work.imageUrl}" alt="work thumbnail">
-            </a>
-          </div>--%>
+
         </td>
         <td>${work.title}</td>
         <td>${work.author}</td>
-        <td><button type="button" id="bookinfo" class="btn btn-link">Info</button></td>
-        <td><button type="button" id="haveread" class="btn btn-link">Have Read</button></td>
-
+        <td>${work.isbn}</td>
       </tr>
     </c:forEach>
     </tbody>
   </table>
 </div>
-
-<%--$(function(){
-  $('#bookinfo').on('click', function (e) {
-  alert('Hello!');
-  });
-});--%>
 
 </body>
 </html>

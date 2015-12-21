@@ -48,17 +48,21 @@ public class WorkBeanDao {
         Criteria criteria = session.createCriteria(WorkBean.class);
         criteria.add(Restrictions.like("goodreadsId", goodreadsId));
 
-        try {
+        /* null safe for criteria list() */
+        if(criteria.list().size() > 0) {
+            try {
 
-            work = (WorkBean) criteria.list().get(0);
+                work = (WorkBean) criteria.list().get(0);
 
-        } catch (HibernateException e) {
-            log.error("Exception attempting search for work with goodreads id: " + goodreadsId);
-            log.error(e);
-            e.printStackTrace();
-        } finally {
-            session.close();
-            log.debug("Get Work By Goodreads Id - Session closed");
+            } catch (HibernateException e) {
+                /* catch and log error */
+                log.error("Exception attempting search for work with goodreads id: " + goodreadsId);
+                log.error(e);
+
+            } finally {
+                session.close();
+                log.debug("Get Work By Goodreads Id - Session closed");
+            }
         }
         return work;
     }

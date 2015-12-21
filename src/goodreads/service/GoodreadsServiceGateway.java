@@ -61,4 +61,17 @@ public class GoodreadsServiceGateway {
 
         return bookBeanList;
     }
+
+    public WorkBean getBookFromIsbn(String isbn) {
+
+        WorkBean isbnWork = null;
+        ArrayList<WorkBean> isbnResult = searchBook(isbn);
+
+        if(isbnResult.size() == 1) {
+            isbnWork = isbnResult.get(0);
+        }
+
+        return isbnWork;
+    }
+
 }

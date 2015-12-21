@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.jsp">Home</a></li>
-        <li><a href="content.html">Book Search</a></li>
+        <li><a href="bookington.jsp">User Home</a></li>
         <li><a href="#projects">Author Search</a></li>
         <li><a href="#contact">Contact Us</a></li>
         <li><a href="logout">Logout</a></li>

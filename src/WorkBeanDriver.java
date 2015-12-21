@@ -2,6 +2,7 @@ import common.RoleNameEnum;
 import entity.UserBean;
 import entity.UserRoleBean;
 import entity.WorkBean;
+import goodreads.service.GoodreadsServiceGateway;
 import persistence.UserBeanDao;
 import persistence.UserRoleBeanDao;
 import persistence.WorkBeanDao;
@@ -29,12 +30,18 @@ public class WorkBeanDriver {
     public static void main(String[] args) {
 
         WorkBeanDriver wbd = new WorkBeanDriver();
+        GoodreadsServiceGateway gateway = new GoodreadsServiceGateway();
+
+        String isbn = "038039586X";
+
+        WorkBean isbnBean = gateway.getBookFromIsbn(isbn);
+        System.out.println(isbnBean.toString());
 
 //        WorkBeanDao dao = new WorkBeanDao();
 //        WorkBean work = new WorkBean("Title of Book2", "Author of Book2", "1345678");
 //        dao.addWork(work);
 
-        wbd.addNewAppUser("Henry", "Cooper", "cooper", "password", "test@test.com");
+//        wbd.addNewAppUser("Henry", "Cooper", "cooper", "password", "test@test.com");
 
     }
 }

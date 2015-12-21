@@ -27,20 +27,6 @@ public class BookSearchServlet extends HttpServlet {
     }
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
-                        throws ServletException, IOException {
-        // Set response content type
-        response.setContentType("text/html");
-
-        String bla = request.getSession().getAttribute("bla").toString();
-
-        // Actual logic goes here.
-        //PrintWriter out = response.getWriter();
-        //out.println("<h1>" + message + "</h1>");
-        request.getRequestDispatcher("sample.jsp").forward(request, response);
-    }
-
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         search = request.getParameter("search");

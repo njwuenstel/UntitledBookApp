@@ -115,7 +115,7 @@ public class GoodreadsSearchUtil {
 
         connection.disconnect();
 
-        log.info("Connection - " + connection.getURL() + "has been disconnected.");
+        log.info("Connection - " + connection.getURL() + " has been disconnected.");
     }
 
 }

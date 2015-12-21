@@ -58,16 +58,16 @@ public class BookSearch {
         System.out.println("Work: " + firstResult.toString());
         workBeanDao.addWork(firstResult);
 
-//         /* add a works read to user */
-//        // get user
-//        UserBean user = userBeanDao.getUserByAlias("brix");
-//        System.out.println("Returned:");
-//        System.out.println(user);
-//        // get book to add
-//        WorkBean work = workBeanDao.getWorkByGoodreadsId("5907");
-//        System.out.println(work);
-//
-//        userBeanDao.addReadWorkToUser(user, work);
+         /* add a works read to user */
+        // get user
+        UserBean user = userBeanDao.getUserByAlias("brix");
+        System.out.println("Returned:");
+        System.out.println(user);
+        // get book to add
+        WorkBean work = workBeanDao.getWorkByGoodreadsId("5907");
+        System.out.println(work);
+
+        userBeanDao.addReadWorkToUser(user, work);
 
     }
 

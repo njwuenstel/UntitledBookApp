@@ -45,8 +45,8 @@ public class CreateAccountServlet extends HttpServlet {
         try {
             /* validate unique user name */
             UserBean duplicateBean = userBeanDao.getUserByAlias(userAlias);
-            /* make sure userAlias isn't in the list */
 
+            /* make sure userAlias isn't in the list */
             if(duplicateBean != null) {
                 errorMessage = "User Name: '" + userAlias + "' already exists. Please choose a different User Name.";
 
