@@ -88,7 +88,6 @@ public class UserBean {
         this.emailAddress = emailAdress;
     }
 
-    //TODO add havereads
     @Override
     public String toString() {
 

@@ -9,31 +9,13 @@
     <bookmark url="file://$PROJECT_DIR$/src/WorkBeanDriver.java" line="46" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea8289b9-50cb-40b0-9b1f-c59ebce70fa5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/BookingtonReloadServlet.java" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\servlet\AddAppUserServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\servlet\LoginServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\servlet\SampleServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\src\servlet\ServletTemplate.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\UntitledBookApp\web\webresources\book.jsp" afterPath="$PROJECT_DIR$/web/search/bookInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/BookSearch.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/BookSearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsSearchUtil.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsSearchUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsServiceGateway.class" afterPath="$PROJECT_DIR$/out/production/UntitledBookApp/goodreads/service/GoodreadsServiceGateway.class" />
+    <list default="true" id="ea8289b9-50cb-40b0-9b1f-c59ebce70fa5" name="Default" comment="added search method for isbn - added book display page - added and configured method to add has read from multiple screens - some general code cleanup">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/BeanUtil.java" afterPath="$PROJECT_DIR$/src/util/BeanUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/BookDisplayServlet.java" afterPath="$PROJECT_DIR$/src/servlet/BookDisplayServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BookSearch.java" afterPath="$PROJECT_DIR$/src/BookSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/BookSearchServlet.java" afterPath="$PROJECT_DIR$/src/servlet/BookSearchServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/BookingtonServlet.java" afterPath="$PROJECT_DIR$/src/servlet/BookingtonServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/CreateAccountServlet.java" afterPath="$PROJECT_DIR$/src/servlet/CreateAccountServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/GoodreadsSearchUtil.java" afterPath="$PROJECT_DIR$/src/goodreads/service/GoodreadsSearchUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceGateway.java" afterPath="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceGateway.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/persistence/WorkBeanDao.java" afterPath="$PROJECT_DIR$/src/persistence/WorkBeanDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorkBeanDriver.java" afterPath="$PROJECT_DIR$/src/WorkBeanDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/webresources/jsp/banner.jsp" afterPath="$PROJECT_DIR$/web/webresources/jsp/banner.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bookington.jsp" afterPath="$PROJECT_DIR$/web/bookington.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search/searchResults.jsp" afterPath="$PROJECT_DIR$/web/search/searchResults.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/goodreads/service/GoodreadsUnmarshallers.java" afterPath="$PROJECT_DIR$/src/goodreads/service/GoodreadsUnmarshallers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/servlet/LogoutServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/UserBean.java" afterPath="$PROJECT_DIR$/src/entity/UserBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/WorkBean.java" afterPath="$PROJECT_DIR$/src/entity/WorkBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UntitledBookApp.iws" />
@@ -87,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.33333334">
-              <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -101,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/servlet/CreateAccountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+              <caret line="22" column="0" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,40 +93,8 @@
         <entry file="file://$PROJECT_DIR$/src/servlet/LogoutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookington.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/bookington.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="24.26923">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchResults.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/search/searchResults.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2075472">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookSearchServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/BookSearchServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,21 +109,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookingtonReloadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/BookingtonReloadServlet.java">
+      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/UserBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bookInfo.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/search/bookInfo.jsp">
+      <file leaf-file-name="BeanUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/util/BeanUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.056604">
-              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+            <state vertical-scroll-proportion="1.231003">
+              <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodreadsUnmarshallers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/goodreads/service/GoodreadsUnmarshallers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/WorkBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookingtonReloadServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/BookingtonReloadServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -203,11 +183,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xml/showbook.xsd" />
         <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook2/ShowBookResponseType.java" />
         <option value="$PROJECT_DIR$/xml/New folder/showbook.xsd" />
         <option value="$PROJECT_DIR$/src/goodreads/service/xjc/showbook/BookType.java" />
-        <option value="$PROJECT_DIR$/src/entity/WorkBean.java" />
         <option value="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceMapper.java" />
         <option value="$PROJECT_DIR$/src/WorkBean.hbm.xml" />
         <option value="$PROJECT_DIR$/src/UserBean.hbm.xml" />
@@ -215,7 +193,6 @@
         <option value="$PROJECT_DIR$/web/user/accountConfirmation.jsp" />
         <option value="$PROJECT_DIR$/web/user/userHome.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/NewUserServlet.java" />
-        <option value="$PROJECT_DIR$/src/entity/UserBean.java" />
         <option value="$PROJECT_DIR$/src/servlet/ServletTemplate.java" />
         <option value="$PROJECT_DIR$/web/bootstrap.jsp" />
         <option value="$PROJECT_DIR$/src/util/BookieLogger.java" />
@@ -227,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/persistence/UserBeanDao.java" />
         <option value="$PROJECT_DIR$/web/webresources/jsp/head.jsp" />
         <option value="$PROJECT_DIR$/web/logout.jsp" />
-        <option value="$PROJECT_DIR$/src/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/web/sample.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/DisplayBookServlet.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
@@ -239,9 +215,7 @@
         <option value="$PROJECT_DIR$/src/BookSearch.java" />
         <option value="$PROJECT_DIR$/src/WorkBeanDriver.java" />
         <option value="$PROJECT_DIR$/src/goodreads/service/GoodreadsSearchUtil.java" />
-        <option value="$PROJECT_DIR$/src/util/BeanUtil.java" />
         <option value="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/CreateAccountServlet.java" />
         <option value="$PROJECT_DIR$/src/goodreads/service/GoodreadsServiceGateway.java" />
         <option value="$PROJECT_DIR$/src/persistence/WorkBeanDao.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
@@ -254,6 +228,12 @@
         <option value="$PROJECT_DIR$/src/servlet/BookDisplayServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/BookingtonReloadServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/entity/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/goodreads/service/GoodreadsUnmarshallers.java" />
+        <option value="$PROJECT_DIR$/src/entity/WorkBean.java" />
+        <option value="$PROJECT_DIR$/src/servlet/CreateAccountServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/util/BeanUtil.java" />
       </list>
     </option>
   </component>
@@ -637,7 +617,7 @@
       <recent name="goodreads.service.pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.bookwebapp">
+  <component name="RunManager" selected="JUnit.All in UntitledBookApp">
     <configuration default="false" name="JAXBExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1194,9 +1174,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.WorkBeanDriver" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BookSearch" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in UntitledBookApp" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in UntitledBookApp" />
+        <item index="1" class="java.lang.String" itemvalue="Application.WorkBeanDriver" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BookSearch" />
         <item index="3" class="java.lang.String" itemvalue="Application.JAXBExample" />
         <item index="4" class="java.lang.String" itemvalue="Application.JaxbBook" />
       </list>
@@ -1234,7 +1214,7 @@
       <workItem from="1449990728629" duration="2802000" />
       <workItem from="1449994799359" duration="29518000" />
       <workItem from="1450324585723" duration="1390000" />
-      <workItem from="1450408140592" duration="51892000" />
+      <workItem from="1450408140592" duration="54586000" />
     </task>
     <task id="LOCAL-00001" summary="some stuff taking shape">
       <created>1444631043592</created>
@@ -1332,11 +1312,17 @@
       <option name="project" value="LOCAL" />
       <updated>1450620864548</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added search method for isbn - added book display page - added and configured method to add has read from multiple screens - some general code cleanup">
+      <created>1450689634700</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1450689634700</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251018000" />
+    <option name="totallyTimeSpent" value="253712000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1352,7 +1338,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13993174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40443686" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30716723" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1360,7 +1346,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39078498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39078498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1373,7 +1359,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51706487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49146757" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1411,7 +1397,8 @@
     <MESSAGE value="started using bootstrap for jsps - create user pages and servlets are complete except for javadoc" />
     <MESSAGE value="more bootstrap - added image banner - started landing page - got login working" />
     <MESSAGE value="work from last two nights - added head and banner with jstl - added logout functionality - added search results page - trying to make individual book lookup and add" />
-    <option name="LAST_COMMIT_MESSAGE" value="work from last two nights - added head and banner with jstl - added logout functionality - added search results page - trying to make individual book lookup and add" />
+    <MESSAGE value="added search method for isbn - added book display page - added and configured method to add has read from multiple screens - some general code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search method for isbn - added book display page - added and configured method to add has read from multiple screens - some general code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1629,14 +1616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/WorkBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="143" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/account/accountConfirmation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
@@ -1725,24 +1704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#1399#1400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/BeanUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/b04fbc52/83339731-e8e7-442c-8009-d363d10aae62/books..works_read">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1801,22 +1762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/CreateAccountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/BookSearchServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1853,8 +1798,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33333334">
-          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/goodreads/service/GoodreadsUnmarshallers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/WorkBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/CreateAccountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/BeanUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.231003">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
           <folding />
         </state>
       </provider>

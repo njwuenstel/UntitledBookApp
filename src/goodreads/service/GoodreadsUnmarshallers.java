@@ -1,6 +1,5 @@
 package goodreads.service;
 
-
 import goodreads.service.xjc.booksearch.BookSearchResponseType;
 import goodreads.service.xjc.showbook.ShowBookResponseType;
 
@@ -29,28 +28,8 @@ public class GoodreadsUnmarshallers {
 
         BookSearchResponseType unmarshalledBookSearch;
 
-//        try {
-            /*
-             * Create a new instance of a JAXBContext object passing in the class to
-             * be bound.
-             */
-
-            // marshal object to file input stream
-            unmarshalledBookSearch = JAXB.unmarshal(bookSearchResponse, BookSearchResponseType.class);
-
-            //JAXBContext jaxbContext = JAXBContext.newInstance(BookSearchResponseType.class);
-
-            /* Instantiate the unmarshaller */
-            //Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-
-            /* get unmarshalled book search object */
-            //unmarshalledBookSearch = (BookSearchResponseType) unmarshaller.unmarshal(bookSearchResponse);
-
-//        } catch (JAXBException e) {
-//
-//            //TODO log
-//            e.printStackTrace();
-//        }
+        // marshal object to file input stream
+        unmarshalledBookSearch = JAXB.unmarshal(bookSearchResponse, BookSearchResponseType.class);
 
         System.out.println(unmarshalledBookSearch.getSearch().getResults().getWork().get(0).getBestBook().getTitle());
 
@@ -70,26 +49,6 @@ public class GoodreadsUnmarshallers {
 
         // marshal object to file input stream
         unmarshalledShowBook = JAXB.unmarshal(showBookResponse, ShowBookResponseType.class);
-
-
-//        try {
-//            /*
-//             * Create a new instance of a JAXBContext object passing in the class to
-//             * be bound.
-//             */
-//            JAXBContext jaxbContext = JAXBContext.newInstance(BookSearchResponseType.class);
-//
-//            /* Instantiate the unmarshaller */
-//            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-//
-//            /* get unmarshalled book search object */
-//            unmarshalledShowBook = (ShowBookResponseType) unmarshaller.unmarshal(showBookResponse);
-//
-//        } catch (JAXBException e) {
-//
-//            //TODO log
-//            e.printStackTrace();
-//        }
 
         return unmarshalledShowBook;
     }

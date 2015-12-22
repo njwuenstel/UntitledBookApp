@@ -126,7 +126,6 @@ public class WorkBean {
         this.userReads = userReads;
     }
 
-    //TODO: add userReads
     @Override
     public String toString() {
 

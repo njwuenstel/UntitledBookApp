@@ -55,7 +55,7 @@ public class CreateAccountServlet extends HttpServlet {
                 BeanUtil beanUtil = new BeanUtil();
 
                 beanUtil.addNewAppUser(firstName, lastName, userAlias, userPassword, userEmail);
-                //TODO log success
+                log.info("Successfully added new user: " + userAlias);
 
                 /* redirect to confirmation screen */
                 request.getSession().setAttribute("firstName", firstName);

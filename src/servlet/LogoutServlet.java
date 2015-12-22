@@ -1,5 +1,8 @@
 package servlet;
 
+import org.apache.log4j.Logger;
+import util.BookingtonLoggers;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +16,8 @@ import java.io.IOException;
         urlPatterns = { "/logout" }
 )
 public class LogoutServlet extends HttpServlet {
+
+    static Logger log = BookingtonLoggers.getWebLog();
 
     private String message;
 
@@ -30,7 +35,7 @@ public class LogoutServlet extends HttpServlet {
         /* clears all session variables */
         request.getSession().invalidate();
         request.logout();
-        //TODO log here
+        log.info("User successfully logged out");
         request.getRequestDispatcher("/logout.jsp").forward(request, response);
     }
 

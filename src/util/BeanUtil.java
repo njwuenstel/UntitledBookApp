@@ -4,16 +4,18 @@ import common.RoleNameEnum;
 import entity.UserBean;
 import entity.UserRoleBean;
 import entity.WorkBean;
+import org.apache.log4j.Logger;
 import persistence.UserBeanDao;
 import persistence.UserRoleBeanDao;
 import persistence.WorkBeanDao;
 
 public class BeanUtil {
 
+    static Logger log = BookingtonLoggers.getWebLog();
+
     UserBeanDao userDao = new UserBeanDao();
     UserRoleBeanDao userRoleDao = new UserRoleBeanDao();
     WorkBeanDao workDao = new WorkBeanDao();
-
 
     public UserBean addNewAppUser(String firstName, String lastName,
                    String alias, String password, String emailAddress) {
@@ -45,7 +47,7 @@ public class BeanUtil {
 
         /* add work to hasRead */
         userDao.addReadWorkToUser(user, work);
-        //TODO error handling and log add work to hasread
+        log.info("Work: " + work.getTitle() + "added to User: " + user.getUserId());
     }
 
 }
